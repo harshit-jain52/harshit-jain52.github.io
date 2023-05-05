@@ -1,18 +1,29 @@
+@font-face {
+    font-family: CascadiaCode;
+    src: url(CascadiaCode_Regular.ttf);
+}
+
+@font-face {
+    font-family: FiraCode;
+    src: url(FiraCode_Retina.ttf);
+}
+
 body {
     background-color: #000099;
 }
 
 h1 {
-    font-family: Cascadia Code;
+    font-family: CascadiaCode;
     color: white;
 }
 
 h2 {
-    font-family: Cascadia Code;
+    font-family: FiraCode;
     color: white;
 }
 
 h3 {
-    font-family: Cascadia Code;
+    font-family: FiraCode;
     color: white;
 }
+
