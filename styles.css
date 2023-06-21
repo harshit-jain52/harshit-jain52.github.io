@@ -1,11 +1,11 @@
 @font-face {
     font-family: CascadiaCode;
-    src: url(CascadiaCode_Regular.ttf);
+    src: url(Fonts/CascadiaCode_Regular.ttf);
 }
 
 @font-face {
     font-family: FiraCode;
-    src: url(FiraCode_Retina.ttf);
+    src: url(Fonts/FiraCode_Retina.ttf);
 }
 
 body {
