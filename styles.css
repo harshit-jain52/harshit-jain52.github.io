@@ -9,21 +9,39 @@
 }
 
 body {
-    background-color: #000099;
+    background-color: #02026b;
 }
 
 h1 {
     font-family: CascadiaCode;
     color: white;
+    text-align: center;
+    text-shadow: 4px 0 rgb(73, 70, 70);
+}
+
+p {
+    font-family: Arial;
+    color: whitesmoke;
+    font-size: 20px;
 }
 
 h2 {
     font-family: FiraCode;
     color: white;
+    font-size: 25px;
+}
+
+ul {
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: crimson; */
+
+    border: 2px solid crimson;
+    background-color: rgb(40, 43, 41);
 }
 
 ul li {
-    font-family: FiraCode;
-    color: white;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 1rem;
 }
-
