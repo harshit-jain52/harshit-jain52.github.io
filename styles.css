@@ -63,7 +63,8 @@ p.intro {
 .third div {
     background-color: #c10528;
 }
-.third div img{
+
+.third div img {
     width: 3.25rem;
     height: 3.25rem;
     margin-left: 1rem
@@ -136,7 +137,7 @@ ul li {
     padding: 5px 15px;
 }
 
-ul li a img {
+.logo {
     width: 40px;
     height: 40px;
 }
