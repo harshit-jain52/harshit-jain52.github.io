@@ -8,8 +8,99 @@
     src: url(Fonts/FiraCode_Retina.ttf);
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(Fonts/Roboto-Regular.ttf);
+}
+
 body {
-    background-color: #02026b;
+    background-color: rgb(10, 10, 10);
+    height: 100%;
+}
+
+p.intro {
+    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    font-family: Roboto;
+    font-size: 4.06rem;
+}
+
+.container {
+    color: #e5e5e5;
+    font-family: Firacode;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation {
+    height: 4.375rem;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.animation div div {
+    padding: 0.25rem 0.75rem;
+    height: 4rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 6s infinite;
+}
+
+.first div {
+    background-color: #15a1f1;
+}
+
+.second div {
+    background-color: #d31594;
+}
+
+.third div {
+    background-color: #c10528;
+}
+.third div img{
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-left: 1rem
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    15% {
+        margin-top: 0;
+    }
+
+    30% {
+        margin-top: -6.8rem;
+    }
+
+    45% {
+        margin-top: -6.8rem;
+    }
+
+    60% {
+        margin-top: -13.8rem;
+    }
+
+    75% {
+        margin-top: -13.8rem;
+    }
+
+    90% {
+        margin-top: 0rem;
+    }
+
+    100% {
+        margin-top: 0rem;
+    }
 }
 
 h1 {
@@ -19,10 +110,9 @@ h1 {
     text-shadow: 4px 0 rgb(73, 70, 70);
 }
 
-p {
-    font-family: Arial;
-    color: whitesmoke;
-    font-size: 20px;
+p span img {
+    width: 25px;
+    height: 25px;
 }
 
 h2 {
@@ -43,5 +133,10 @@ ul {
 ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 0 1rem;
+    padding: 5px 15px;
+}
+
+ul li a img {
+    width: 40px;
+    height: 40px;
 }
