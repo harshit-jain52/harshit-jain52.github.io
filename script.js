@@ -6,7 +6,7 @@ function getColor(r) {
     if (r < 1600)
         return "cyan";
     if (r < 1900)
-        return "#blue";
+        return "blue";
     if (r < 2200)
         return "violet";
     if (r < 2400)
