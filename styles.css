@@ -14,8 +14,9 @@
 }
 
 body {
-    background-color: rgb(10, 10, 10);
     height: 100%;
+    margin: 0px;
+    background-color: black;
 }
 
 p.intro {
@@ -24,7 +25,7 @@ p.intro {
     font-size: 4.06rem;
 }
 
-.container {
+.welcome {
     color: #e5e5e5;
     font-family: Firacode;
     font-size: 3.75rem;
@@ -33,6 +34,7 @@ p.intro {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
 }
 
 .animation {
@@ -104,6 +106,11 @@ p.intro {
     }
 }
 
+.scrolled {
+    background-image: url(Media/bg_gradient_black-blue.jpg);
+    background-size: 100% 100%;
+}
+
 h1 {
     font-family: CascadiaCode;
     color: white;
@@ -119,7 +126,8 @@ p span img {
 h2 {
     font-family: FiraCode;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
+    text-align: center;
 }
 
 ul {
@@ -129,6 +137,8 @@ ul {
 
     border: 2px solid crimson;
     background-color: rgb(40, 43, 41);
+    display: flex;
+    justify-content: center;
 }
 
 ul li {
@@ -138,12 +148,14 @@ ul li {
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 75px;
+    height: 75px;
 }
 
 #cf_rating {
     color: white;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 25px;
+    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    text-align: center;
 }
