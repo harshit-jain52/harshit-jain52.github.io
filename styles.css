@@ -130,12 +130,36 @@ h2 {
     text-align: center;
 }
 
-ul {
+nav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    background-color: black;
+    z-index: 1;
+}
+
+nav ul {
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 24%;
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+section ul {
     display: flex;
     justify-content: center;
 }
 
-ul li {
+section ul li {
     list-style-type: none;
     display: inline-block;
     padding: 5px 15px;
