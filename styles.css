@@ -131,12 +131,6 @@ h2 {
 }
 
 ul {
-    /* border-width: 2px;
-    border-style: solid;
-    border-color: crimson; */
-
-    border: 2px solid crimson;
-    background-color: rgb(40, 43, 41);
     display: flex;
     justify-content: center;
 }
@@ -145,6 +139,7 @@ ul li {
     list-style-type: none;
     display: inline-block;
     padding: 5px 15px;
+    filter: drop-shadow(0 0 7px rgb(117, 105, 105));
 }
 
 .logo {
