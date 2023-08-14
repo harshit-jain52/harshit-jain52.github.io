@@ -190,19 +190,28 @@ p.formal_intro {
     text-align: center;
 }
 
-#handles .box{
+#handles .box {
     width: 25%;
 }
+
 #about .logo {
     width: 75px;
     height: 75px;
     margin: 35px;
 }
 
-#handles .logo{
+#handles .logo {
     width: 50px;
     height: 50px;
     margin: 25px;
+}
+
+
+#handles .logo:hover {
+    filter: drop-shadow(0 0 7px rgb(11, 84, 194));
+    width: 55px;
+    height: 55px;
+    margin-top: auto;
 }
 
 #cf_rating {
