@@ -168,7 +168,7 @@ nav ul li:hover {
     text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
 }
 
-p.intro {
+p.formal_intro {
     color: white;
     text-align: center;
     font-family: Roboto;
