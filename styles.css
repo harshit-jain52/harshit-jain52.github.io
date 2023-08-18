@@ -224,3 +224,32 @@ p.formal_intro {
     left: 20px; */
     text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+    p.formal_intro {
+        font-size: 15px;
+    }
+
+    #about .logo {
+        width: 45px;
+        height: 45px;
+        margin: 10px;
+    }
+
+    #handles .logo {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    #handles .logo:hover {
+        filter: drop-shadow(0 0 2px rgb(11, 84, 194));
+        width: 40px;
+        height: 40px;
+    }
+
+    #cf_rating {
+        font-size: 15px;
+        text-shadow: 0 0 2px rgba(255, 255, 255, .3), 0 0 1px rgba(255, 255, 255, .3);
+    }
+}
