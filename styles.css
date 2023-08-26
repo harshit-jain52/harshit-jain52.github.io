@@ -166,6 +166,7 @@ nav ul li {
 nav ul li:hover {
     color: #4b48d4;
     text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    font-size: 22px;
 }
 
 p.formal_intro {
@@ -278,19 +279,19 @@ p.formal_intro {
         }
     
         30% {
-            margin-top: -4.25rem;
+            margin-top: -5.2rem;
         }
     
         45% {
-            margin-top: -4.25rem;
+            margin-top: -5.2rem;
         }
     
         60% {
-            margin-top: -9.2rem;
+            margin-top: -10.8rem;
         }
     
         75% {
-            margin-top: -9.2rem;
+            margin-top: -10.8rem;
         }
     
         90% {
@@ -303,8 +304,23 @@ p.formal_intro {
     }
 
     .third div img {
-        width: 1.8rem;
-        height: 1.8rem;
-        margin-left: 0.625rem
+        width: 1.65rem;
+        height: 1.65rem;
+        margin-left: 0.6rem
+    }
+
+    nav {
+        padding: 5px;
+        border-top: white solid 0.5px;
+        border-bottom: white solid 0.5px;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+    
+    nav ul li:hover {
+        color: #4b48d4;
+        text-shadow: 0 0 2px rgba(255, 255, 255, .3), 0 0 1px rgba(255, 255, 255, .3);
     }
 }
