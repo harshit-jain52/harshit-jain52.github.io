@@ -209,7 +209,7 @@ p.formal_intro {
 
 
 #handles .logo:hover {
-    filter: drop-shadow(0 0 7px rgb(11, 84, 194));
+    filter: drop-shadow(0 0 7px rgb(211, 8, 8));
     width: 55px;
     height: 55px;
     margin-top: auto;
@@ -244,7 +244,7 @@ p.formal_intro {
     }
 
     #handles .logo:hover {
-        filter: drop-shadow(0 0 2px rgb(11, 84, 194));
+        filter: drop-shadow(0 0 2px rgb(211, 8, 8));
         width: 40px;
         height: 40px;
     }
