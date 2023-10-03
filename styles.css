@@ -234,7 +234,7 @@ p.formal_intro {
     text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     p.formal_intro {
         font-size: 15px;
     }
@@ -325,4 +325,4 @@ p.formal_intro {
         color: #4b48d4;
         text-shadow: 0 0 2px rgba(255, 255, 255, .3), 0 0 1px rgba(255, 255, 255, .3);
     }
-}
+} */
