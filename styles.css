@@ -171,7 +171,6 @@ nav ul li {
 nav ul li:hover {
     color: #4b48d4;
     text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
-    font-size: 22px;
 }
 
 .nav-for-else ul li{
@@ -183,6 +182,7 @@ p.formal_intro {
     text-align: left;
     font-family: Roboto;
     font-size: 28px;
+    padding-right: 25px;
 }
 
 #textlink {
