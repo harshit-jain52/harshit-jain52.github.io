@@ -241,15 +241,19 @@ p.formal_intro {
 table {
     color: white;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 table .logo {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     margin: 30px;
 }
 
+table td {
+    padding-top: 25px;
+    padding-right: 15px;
+}
 /* @media screen and (max-width: 1200px) {
     p.formal_intro {
         font-size: 15px;
