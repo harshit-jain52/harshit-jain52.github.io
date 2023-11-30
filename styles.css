@@ -1,3 +1,61 @@
+:root {
+    --bg-dark: black;
+    --text-dark: white;
+    --hero-text-dark: #e5e5e5;
+    --hero1-dark: #15a1f1;
+    --hero2-dark: #d31594;
+    --hero3-dark: #c10528;
+    --bg2-dark: rgb(29, 24, 24);
+
+    --bg-light: white;
+    --text-light: #0d2636;
+    --hero-text-light: #0f0d0d;
+    --hero1-light: #075b8b;
+    --hero2-light: #b91b85;
+    --hero3-light: #c10528;
+    --bg2-light: rgb(202, 194, 194);
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --bg: var(--bg-dark);
+        --text: var(--text-dark);
+        --hero-text: var(--hero-text-dark);
+        --hero1: var(--hero1-dark);
+        --hero2: var(--hero2-dark);
+        --hero3: var(--hero3-dark);
+        --bg2: var(--bg2-dark);
+    }
+
+    .logo-dark:hover {
+        filter: drop-shadow(0 0 7px rgb(211, 8, 8));
+    }
+
+    .logo-light {
+        display: none;
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    :root {
+        --bg: var(--bg-light);
+        --text: var(--text-light);
+        --hero-text: var(--hero-text-light);
+        --hero1: var(--hero1-light);
+        --hero2: var(--hero2-light);
+        --hero3: var(--hero3-light);
+        --bg2: var(--bg2-light);
+    }
+
+    .logo-light:hover {
+        filter: drop-shadow(0 0 7px rgb(211, 8, 8));
+    }
+
+    .logo-dark {
+        display: none;
+    }
+}
+
 @font-face {
     font-family: CascadiaCode;
     src: url(Fonts/CascadiaCode_Regular.ttf);
@@ -16,7 +74,7 @@
 body {
     height: 100%;
     margin: 0px;
-    background-color: black;
+    background-color: var(--bg);
 }
 
 div.intro {
@@ -26,7 +84,7 @@ div.intro {
 }
 
 .welcome {
-    color: #e5e5e5;
+    color: var(--hero-text);
     font-family: Firacode;
     font-size: 3.75rem;
     text-transform: uppercase;
@@ -34,7 +92,7 @@ div.intro {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--bg);
 }
 
 .animation {
@@ -55,15 +113,15 @@ div.intro {
 }
 
 .first div {
-    background-color: #15a1f1;
+    background-color: var(--hero1);
 }
 
 .second div {
-    background-color: #d31594;
+    background-color: var(--hero2);
 }
 
 .third div {
-    background-color: #c10528;
+    background-color: var(--hero3);
 }
 
 .third div img {
@@ -106,14 +164,9 @@ div.intro {
     }
 }
 
-/* .scrolled {
-    background-image: url(Media/bg_gradient_black-blue.jpg);
-    background-size: 100% 100%;
-} */
-
 h1 {
     font-family: CascadiaCode;
-    color: white;
+    color: var(--text);
     text-align: center;
     text-shadow: 4px 0 rgb(73, 70, 70);
 }
@@ -125,14 +178,14 @@ p span img {
 
 h2 {
     font-family: FiraCode;
-    color: white;
+    color: var(--text);
     font-size: 50px;
     text-align: center;
 }
 
 h3 {
     font-family: CascadiaCode;
-    color: white;
+    color: var(--text);
     font-size: 25px;
     display: inline-block;
     position: relative;
@@ -143,15 +196,19 @@ nav {
     padding: 10px;
     position: sticky;
     top: 0;
-    border-top: white solid 1px;
-    background-color: black;
+    border-top: var(--text) solid 1px;
+    background-color: var(--bg);
     z-index: 1;
 }
 
-.nav-for-else {
+.for-else {
+    background-color: var(--bg2);
+}
+
+.for-else nav {
     border-top: none;
-    border-bottom: white solid 1px;
-    background-color: rgb(29, 24, 24);
+    border-bottom: var(--text) solid 1px;
+    background-color: var(--bg2);
 }
 
 nav ul {
@@ -162,7 +219,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     width: 33%;
-    color: white;
+    color: var(--text);
     text-align: center;
     font-family: Roboto;
     font-size: 25px;
@@ -178,7 +235,7 @@ nav ul li:hover {
 }
 
 p.formal_intro {
-    color: white;
+    color: var(--text);
     text-align: left;
     font-family: Roboto;
     font-size: 28px;
@@ -187,7 +244,7 @@ p.formal_intro {
 
 #textlink {
     text-decoration: none;
-    color: white;
+    color: var(--text);
 }
 
 #textlink:hover {
@@ -219,19 +276,24 @@ p.formal_intro {
     margin: 25px;
 }
 
-#handles .logo {
+.logo:hover {
+    filter: drop-shadow(0 0 7px rgb(211, 8, 8));
+}
+
+#handles .logo-dark {
     width: 45px;
     height: 45px;
     margin: 20px;
 }
 
-
-.logo:hover {
-    filter: drop-shadow(0 0 7px rgb(211, 8, 8));
+#handles .logo-light {
+    width: 45px;
+    height: 45px;
+    margin: 20px;
 }
 
 #cf_rating {
-    color: white;
+    color: var(--text);
     font-family: Roboto;
     font-size: 25px;
     text-shadow: 0 0 7px rgb(211, 8, 8, .3), 0 0 3px rgba(255, 255, 255, .3);
@@ -239,12 +301,18 @@ p.formal_intro {
 }
 
 table {
-    color: white;
+    color: var(--text);
     font-family: Roboto;
     font-size: 23px;
 }
 
-table .logo {
+table .logo-dark {
+    width: 85px;
+    height: 85px;
+    margin: 30px;
+}
+
+table .logo-light {
     width: 85px;
     height: 85px;
     margin: 30px;
@@ -254,95 +322,3 @@ table td {
     padding-top: 25px;
     padding-right: 15px;
 }
-/* @media screen and (max-width: 1200px) {
-    p.formal_intro {
-        font-size: 15px;
-    }
-
-    #about .logo {
-        width: 45px;
-        height: 45px;
-        margin: 10px;
-    }
-
-    #handles .logo {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-    }
-
-    #cf_rating {
-        font-size: 15px;
-        text-shadow: 0 0 2px rgba(255, 255, 255, .3), 0 0 1px rgba(255, 255, 255, .3);
-    }
-
-    .welcome {
-        flex-direction: column;
-        font-size: 2rem;
-    }
-
-    div.intro {
-        font-size: 2.5rem;
-    }
-
-    .animation div div {
-        padding: 0.25rem 0.75rem;
-        height: 2.5rem;
-        margin-bottom: 1, 76rem;
-    }
-
-    @keyframes text-animation {
-        0% {
-            margin-top: 0;
-        }
-
-        15% {
-            margin-top: 0;
-        }
-
-        30% {
-            margin-top: -5.2rem;
-        }
-
-        45% {
-            margin-top: -5.2rem;
-        }
-
-        60% {
-            margin-top: -10.8rem;
-        }
-
-        75% {
-            margin-top: -10.8rem;
-        }
-
-        90% {
-            margin-top: 0rem;
-        }
-
-        100% {
-            margin-top: 0rem;
-        }
-    }
-
-    .third div img {
-        width: 1.65rem;
-        height: 1.65rem;
-        margin-left: 0.6rem
-    }
-
-    nav {
-        padding: 5px;
-        border-top: white solid 0.5px;
-        border-bottom: white solid 0.5px;
-    }
-
-    nav ul li {
-        font-size: 15px;
-    }
-
-    nav ul li:hover {
-        color: #4b48d4;
-        text-shadow: 0 0 2px rgba(255, 255, 255, .3), 0 0 1px rgba(255, 255, 255, .3);
-    }
-} */
