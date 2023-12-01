@@ -6,7 +6,7 @@
     --hero2-dark: #d31594;
     --hero3-dark: #c10528;
     --bg2-dark: rgb(29, 24, 24);
-
+    
     --bg-light: white;
     --text-light: #0d2636;
     --hero-text-light: #0f0d0d;
@@ -25,6 +25,7 @@
         --hero2: var(--hero2-dark);
         --hero3: var(--hero3-dark);
         --bg2: var(--bg2-dark);
+        --button: var(--bg-light);
     }
 
     .logo-dark:hover {
@@ -32,6 +33,10 @@
     }
 
     .logo-light {
+        display: none;
+    }
+
+    .light {
         display: none;
     }
 }
@@ -45,6 +50,7 @@
         --hero2: var(--hero2-light);
         --hero3: var(--hero3-light);
         --bg2: var(--bg2-light);
+        --button: var(--bg-dark);
     }
 
     .logo-light:hover {
@@ -52,6 +58,10 @@
     }
 
     .logo-dark {
+        display: none;
+    }
+
+    .dark {
         display: none;
     }
 }
@@ -164,6 +174,26 @@ div.intro {
     }
 }
 
+#theme {
+    position: absolute;
+    top: 25px;
+    bottom: auto;
+    right: 30px;
+    padding: 8px;
+    background-color: var(--button);
+    border-radius: 100%;
+}
+
+#theme img {
+    height: 30px;
+    width: 30px;
+}
+
+.for-else #theme{
+    top: auto;
+    bottom: 30px;
+    right:30px;
+}
 h1 {
     font-family: CascadiaCode;
     color: var(--text);
