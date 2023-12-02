@@ -4,7 +4,7 @@ const loadTheme = theme => {
     const lightLogos = document.querySelectorAll('.logo-light');
 
     root.setAttribute('color-scheme', `${theme}`);
-    localStorage.setItem('theme', `${theme}`);
+    localStorage.setItem('hjpf.theme', `${theme}`);
 
     if (theme == 'dark') {
         darkLogos.forEach(
@@ -46,7 +46,7 @@ const loadTheme = theme => {
 
 const getCurrentTheme = () => {
     let theme = (matchMedia("(prefers-color-scheme: dark)").matches) ? 'dark' : 'light';
-    let local = localStorage.getItem('theme');
+    let local = localStorage.getItem('hjpf.theme');
     if (local) theme = local;
     return theme;
 }
