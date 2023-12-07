@@ -1,3 +1,46 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("cur_rating").textContent = " Fetching...";
+    document.getElementById("max_rating").textContent = " Fetching...";
+
+    let handle = "harshit_jain52";
+    const api_url = "https://codeforces.com/api/user.rating?handle=" + handle;
+
+    getapi(api_url).then(data => {
+        let len = data.result.length;
+
+        if (len > 0) {
+            let cur_rating = data.result[len - 1].newRating;
+
+            let max_rating = 0;
+            for (let i = 0; i < len; i++) {
+                if (data.result[i].newRating > max_rating) max_rating = data.result[i].newRating;
+            }
+
+            const curR = document.getElementById("cur_rating");
+            curR.textContent = ` ${cur_rating}`;
+            curR.style.color = getColor(cur_rating);
+
+            const maxR = document.getElementById("max_rating");
+            maxR.textContent = ` ${max_rating}`;
+            maxR.style.color = getColor(max_rating);
+        }
+        else {
+            document.getElementById("cur_rating").parentElement.style.display = 'none'; // Unrated
+        }
+    }).catch(err => {
+        console.log("Rejected:", err.message);
+    });
+});
+
+async function getapi(url) {
+    const response = await fetch(url);
+    if(response.status !== 200){
+        throw new Error("cannot fetch the data");
+    }
+    const data = await response.json();
+    return data;
+}
+
 function getColor(r) {
     if (r < 1200)
         return "gray";
@@ -13,30 +56,3 @@ function getColor(r) {
         return "orange";
     return "red";
 }
-
-async function getapi(url) {
-    const response = await fetch(url);
-
-    let data = await response.json();
-
-    const ratings = [];
-    let max_rating = 0;
-    let cur_rating = 0;
-    for (let i = 0; i < data.result.length; i++) {
-        ratings[i] = data.result[i].newRating;
-        if (ratings[i] > max_rating) max_rating = ratings[i];
-    }
-
-    if (ratings.length > 0) cur_rating = ratings[ratings.length - 1];
-
-    document.getElementById("cur_rating").innerHTML = cur_rating;
-    document.getElementById("cur_rating").style.color = getColor(cur_rating);
-
-    document.getElementById("max_rating").innerHTML = max_rating;
-    document.getElementById("max_rating").style.color = getColor(max_rating);
-}
-
-let handle = "harshit_jain52";
-const api_url = "https://codeforces.com/api/user.rating?handle=" + handle;
-
-getapi(api_url);
