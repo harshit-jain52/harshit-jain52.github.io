@@ -6,6 +6,8 @@
     --hero2-dark: #d31594;
     --hero3-dark: #c10528;
     --bg2-dark: rgb(29, 24, 24);
+    --shadow-dark: rgba(255, 255, 255, .3);
+    --focus-dark: rgb(18, 212, 18);
 
     --bg-light: white;
     --text-light: #0d2636;
@@ -14,6 +16,8 @@
     --hero2-light: #b91b85;
     --hero3-light: #c10528;
     --bg2-light: rgb(202, 194, 194);
+    --shadow-light: rgba(77, 74, 74, 0.3);
+    --focus-light: rgb(9, 156, 9);
 }
 
 [color-scheme="dark"] {
@@ -25,6 +29,8 @@
     --hero3: var(--hero3-dark);
     --bg2: var(--bg2-dark);
     --button: var(--bg-light);
+    --shadow: var(--shadow-dark);
+    --focus: var(--focus-dark);
 }
 
 [color-scheme="light"] {
@@ -36,6 +42,8 @@
     --hero3: var(--hero3-light);
     --bg2: var(--bg2-light);
     --button: var(--bg-dark);
+    --shadow: var(--shadow-light);
+    --focus: var(--focus-light);
 }
 
 @font-face {
@@ -60,7 +68,7 @@ body {
 }
 
 div.intro {
-    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
     font-family: Roboto;
     font-size: 4.06rem;
 }
@@ -229,8 +237,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #4b48d4;
-    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
 }
 
 .nav-for-else ul li {
@@ -261,7 +268,7 @@ p.formal_intro {
 
     width: 50%;
     height: auto;
-    filter: drop-shadow(0 0 7px rgb(117, 105, 105));
+    filter: drop-shadow(0 0 7px var(--shadow));
 }
 
 #handles .box {
@@ -294,14 +301,16 @@ p.formal_intro {
     color: var(--text);
     font-family: Roboto;
     font-size: 25px;
-    text-shadow: 0 0 7px rgb(211, 8, 8, .3), 0 0 3px rgba(255, 255, 255, .3);
+    text-shadow: 0 0 7px rgb(211, 8, 8, .3), 0 0 3px var(--shadow);
     text-align: center;
 }
 
 table {
     color: var(--text);
     font-family: Roboto;
-    font-size: 23px;
+    font-size: 27px;
+    margin: 25px;
+    border-collapse: collapse;
 }
 
 table .logo-dark {
@@ -319,4 +328,13 @@ table .logo-light {
 table td {
     padding-top: 25px;
     padding-right: 15px;
+}
+
+#current_tab {
+    color: var(--focus);
+    text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+}
+
+tr:hover{
+    background-color: #e5e5e52c;
 }
