@@ -1,23 +1,24 @@
 :root {
-    --bg-dark: black;
-    --text-dark: white;
-    --hero-text-dark: #e5e5e5;
-    --hero1-dark: #15a1f1;
-    --hero2-dark: #d31594;
-    --hero3-dark: #c10528;
-    --bg2-dark: rgb(29, 24, 24);
-    --shadow-dark: rgba(255, 255, 255, .3);
-    --focus-dark: rgb(18, 212, 18);
+    --bg-dark: #0B0C10;
+    --text-dark: #c5c6c7;
+    --hero-text-dark: #66fcf1;
+    --hero1-dark: #1f2833;
+    --hero2-dark: #1f2833;
+    --hero3-dark: #1f2833;
+    --shadow-dark: var(--hero-text-dark);
+    --focus-dark: var(--hero-text-dark);
+    --button-dark: var(--focus-dark);
+    --glow-dark: var(--shadow-dark);
 
-    --bg-light: white;
+    --bg-light: #c5c6c7;
     --text-light: #0d2636;
     --hero-text-light: #0f0d0d;
     --hero1-light: #075b8b;
     --hero2-light: #b91b85;
     --hero3-light: #c10528;
-    --bg2-light: rgb(202, 194, 194);
     --shadow-light: rgba(77, 74, 74, 0.3);
     --focus-light: rgb(9, 156, 9);
+    --button-light: var(--bg-dark);
 }
 
 [color-scheme="dark"] {
@@ -27,10 +28,10 @@
     --hero1: var(--hero1-dark);
     --hero2: var(--hero2-dark);
     --hero3: var(--hero3-dark);
-    --bg2: var(--bg2-dark);
-    --button: var(--bg-light);
+    --button: var(--button-dark);
     --shadow: var(--shadow-dark);
     --focus: var(--focus-dark);
+    --glow: var(--glow-dark);
 }
 
 [color-scheme="light"] {
@@ -40,8 +41,7 @@
     --hero1: var(--hero1-light);
     --hero2: var(--hero2-light);
     --hero3: var(--hero3-light);
-    --bg2: var(--bg2-light);
-    --button: var(--bg-dark);
+    --button: var(--button-light);
     --shadow: var(--shadow-light);
     --focus: var(--focus-light);
 }
@@ -121,36 +121,22 @@ div.intro {
 }
 
 @keyframes text-animation {
-    0% {
+
+    0%,
+    15%,
+    90%,
+    100% {
         margin-top: 0;
     }
 
-    15% {
-        margin-top: 0;
-    }
-
-    30% {
-        margin-top: -6.8rem;
-    }
-
+    30%,
     45% {
         margin-top: -6.8rem;
     }
 
-    60% {
+    60%,
+    70% {
         margin-top: -13.8rem;
-    }
-
-    75% {
-        margin-top: -13.8rem;
-    }
-
-    90% {
-        margin-top: 0rem;
-    }
-
-    100% {
-        margin-top: 0rem;
     }
 }
 
@@ -175,13 +161,6 @@ div.intro {
     right: 30px;
 }
 
-h1 {
-    font-family: CascadiaCode;
-    color: var(--text);
-    text-align: center;
-    text-shadow: 4px 0 rgb(73, 70, 70);
-}
-
 p span img {
     width: 25px;
     height: 25px;
@@ -189,7 +168,7 @@ p span img {
 
 h2 {
     font-family: FiraCode;
-    color: var(--text);
+    color: var(--hero-text);
     font-size: 50px;
     text-align: center;
 }
@@ -208,18 +187,12 @@ nav {
     position: sticky;
     top: 0;
     border-top: var(--text) solid 1px;
-    background-color: var(--bg);
     z-index: 1;
-}
-
-.for-else {
-    background-color: var(--bg2);
 }
 
 .for-else nav {
     border-top: none;
     border-bottom: var(--text) solid 1px;
-    background-color: var(--bg2);
 }
 
 nav ul {
@@ -258,7 +231,7 @@ p.formal_intro {
 }
 
 #textlink:hover {
-    filter: drop-shadow(0 0 7px rgb(211, 8, 8));
+    filter: drop-shadow(0 0 7px var(--focus));
 }
 
 .box {
@@ -268,7 +241,6 @@ p.formal_intro {
 
     width: 50%;
     height: auto;
-    filter: drop-shadow(0 0 7px var(--shadow));
 }
 
 #handles .box {
@@ -279,19 +251,14 @@ p.formal_intro {
     width: 55px;
     height: 55px;
     margin: 25px;
+    filter: drop-shadow(0 0 3px var(--shadow));
 }
 
 .logo:hover {
-    filter: drop-shadow(0 0 7px rgb(211, 8, 8));
+    filter: drop-shadow(0 0 1px var(--glow));
 }
 
-#handles .logo-dark {
-    width: 45px;
-    height: 45px;
-    margin: 20px;
-}
-
-#handles .logo-light {
+#handles .logo {
     width: 45px;
     height: 45px;
     margin: 20px;
@@ -313,13 +280,7 @@ table {
     border-collapse: collapse;
 }
 
-table .logo-dark {
-    width: 85px;
-    height: 85px;
-    margin: 30px;
-}
-
-table .logo-light {
+table .logo {
     width: 85px;
     height: 85px;
     margin: 30px;
@@ -331,10 +292,10 @@ table td {
 }
 
 #current_tab {
-    color: var(--focus);
     text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+    text-decoration: underline solid var(--focus) 5px;
 }
 
-tr:hover{
+tr:hover {
     background-color: #e5e5e52c;
 }

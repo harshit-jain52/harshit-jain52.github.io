@@ -10,14 +10,13 @@ const loadTheme = theme => {
         darkLogos.forEach(
             logo => {
                 logo.style.display = 'flex';
-                logo.classList.add('logo');
             }
         );
 
         lightLogos.forEach(
             logo => {
                 logo.style.display = 'none';
-                logo.classList.remove('logo');
+
             }
         );
 
@@ -28,14 +27,13 @@ const loadTheme = theme => {
         darkLogos.forEach(
             logo => {
                 logo.style.display = 'none';
-                logo.classList.remove('logo');
+
             }
         );
 
         lightLogos.forEach(
             logo => {
                 logo.style.display = 'flex';
-                logo.classList.add('logo');
             }
         );
 
