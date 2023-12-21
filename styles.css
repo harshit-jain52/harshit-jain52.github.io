@@ -203,14 +203,32 @@ nav ul {
 nav ul li {
     display: inline-block;
     width: 33%;
-    color: var(--text);
     text-align: center;
+}
+
+.navtab {
+    display: inline-block;
+    position: relative;
+    color: var(--text);
     font-family: Roboto;
     font-size: 25px;
 }
 
-nav ul li:hover {
-    text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+.navtab::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.15s ease-out;
+    background-color: var(--focus);
+    box-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+}
+
+.navtab:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-for-else ul li {
@@ -293,7 +311,6 @@ table td {
 
 #current_tab {
     text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
-    text-decoration: underline solid var(--focus) 5px;
 }
 
 tr:hover {
