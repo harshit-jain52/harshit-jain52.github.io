@@ -1,318 +1,323 @@
 :root {
-    --bg-dark: #0B0C10;
-    --text-dark: #c5c6c7;
-    --hero-text-dark: #66fcf1;
-    --hero1-dark: #1f2833;
-    --hero2-dark: #1f2833;
-    --hero3-dark: #1f2833;
-    --shadow-dark: var(--hero-text-dark);
-    --focus-dark: var(--hero-text-dark);
-    --button-dark: var(--focus-dark);
-    --glow-dark: var(--shadow-dark);
+  --bg-dark: #0b0c10;
+  --text-dark: #c5c6c7;
+  --hero-text-dark: #66fcf1;
+  --hero1-dark: #1f2833;
+  --hero2-dark: #1f2833;
+  --hero3-dark: #1f2833;
+  --shadow-dark: var(--hero-text-dark);
+  --focus-dark: var(--hero-text-dark);
+  --button-dark: var(--focus-dark);
+  --glow-dark: var(--shadow-dark);
+  --table-hover-dark: #e5e5e52c;
 
-    --bg-light: #c5c6c7;
-    --text-light: #0d2636;
-    --hero-text-light: #0f0d0d;
-    --hero1-light: #075b8b;
-    --hero2-light: #b91b85;
-    --hero3-light: #c10528;
-    --shadow-light: rgba(77, 74, 74, 0.3);
-    --focus-light: rgb(9, 156, 9);
-    --button-light: var(--bg-dark);
+  --bg-light: #c5c6c7;
+  --text-light: #0d2636;
+  --hero-text-light: #0f0d0d;
+  --hero1-light: #075b8b;
+  --hero2-light: #b91b85;
+  --hero3-light: #c10528;
+  --shadow-light: var(--hero-text-light);
+  --focus-light: var(--hero-text-light);
+  --button-light: var(--focus-light);
+  --glow-light: var(--shadow-light);
+  --table-hover-light: #110f0f4f;
 }
 
 [color-scheme="dark"] {
-    --bg: var(--bg-dark);
-    --text: var(--text-dark);
-    --hero-text: var(--hero-text-dark);
-    --hero1: var(--hero1-dark);
-    --hero2: var(--hero2-dark);
-    --hero3: var(--hero3-dark);
-    --button: var(--button-dark);
-    --shadow: var(--shadow-dark);
-    --focus: var(--focus-dark);
-    --glow: var(--glow-dark);
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+  --hero-text: var(--hero-text-dark);
+  --hero1: var(--hero1-dark);
+  --hero2: var(--hero2-dark);
+  --hero3: var(--hero3-dark);
+  --button: var(--button-dark);
+  --shadow: var(--shadow-dark);
+  --focus: var(--focus-dark);
+  --glow: var(--glow-dark);
+  --table-hover: var(--table-hover-dark);
 }
 
 [color-scheme="light"] {
-    --bg: var(--bg-light);
-    --text: var(--text-light);
-    --hero-text: var(--hero-text-light);
-    --hero1: var(--hero1-light);
-    --hero2: var(--hero2-light);
-    --hero3: var(--hero3-light);
-    --button: var(--button-light);
-    --shadow: var(--shadow-light);
-    --focus: var(--focus-light);
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+  --hero-text: var(--hero-text-light);
+  --hero1: var(--hero1-light);
+  --hero2: var(--hero2-light);
+  --hero3: var(--hero3-light);
+  --button: var(--button-light);
+  --shadow: var(--shadow-light);
+  --focus: var(--focus-light);
+  --glow: var(--glow-light);
+  --table-hover: var(--table-hover-light);
 }
 
 @font-face {
-    font-family: CascadiaCode;
-    src: url(Fonts/CascadiaCode_Regular.ttf);
+  font-family: CascadiaCode;
+  src: url(Fonts/CascadiaCode_Regular.ttf);
 }
 
 @font-face {
-    font-family: FiraCode;
-    src: url(Fonts/FiraCode_Retina.ttf);
+  font-family: FiraCode;
+  src: url(Fonts/FiraCode_Retina.ttf);
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(Fonts/Roboto-Regular.ttf);
+  font-family: Roboto;
+  src: url(Fonts/Roboto-Regular.ttf);
 }
 
 body {
-    height: 100%;
-    margin: 0px;
-    background-color: var(--bg);
+  height: 100%;
+  margin: 0px;
+  background-color: var(--bg);
 }
 
 div.intro {
-    text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
-    font-family: Roboto;
-    font-size: 4.06rem;
+  text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+  font-family: Roboto;
+  font-size: 4.06rem;
 }
 
 .welcome {
-    color: var(--hero-text);
-    font-family: Firacode;
-    font-size: 3.75rem;
-    text-transform: uppercase;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bg);
+  color: var(--hero-text);
+  font-family: Firacode;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
 }
 
 .animation {
-    height: 4.375rem;
-    overflow: hidden;
-    margin-left: 1rem;
+  height: 4.375rem;
+  overflow: hidden;
+  margin-left: 1rem;
 }
 
 .animation div div {
-    padding: 0.25rem 0.75rem;
-    height: 4rem;
-    margin-bottom: 2.81rem;
-    display: inline-block;
+  padding: 0.25rem 0.75rem;
+  height: 4rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
 }
 
 .animation div:first-child {
-    animation: text-animation 6s infinite;
+  animation: text-animation 6s infinite;
 }
 
 .first div {
-    background-color: var(--hero1);
+  background-color: var(--hero1);
 }
 
 .second div {
-    background-color: var(--hero2);
+  background-color: var(--hero2);
 }
 
 .third div {
-    background-color: var(--hero3);
+  background-color: var(--hero3);
 }
 
 .third div img {
-    width: 3.25rem;
-    height: 3.25rem;
-    margin-left: 1rem
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-left: 1rem;
 }
 
 @keyframes text-animation {
+  0%,
+  15%,
+  90%,
+  100% {
+    margin-top: 0;
+  }
 
-    0%,
-    15%,
-    90%,
-    100% {
-        margin-top: 0;
-    }
+  30%,
+  45% {
+    margin-top: -6.8rem;
+  }
 
-    30%,
-    45% {
-        margin-top: -6.8rem;
-    }
-
-    60%,
-    70% {
-        margin-top: -13.8rem;
-    }
+  60%,
+  70% {
+    margin-top: -13.8rem;
+  }
 }
 
 #theme {
-    position: absolute;
-    top: 25px;
-    bottom: auto;
-    right: 30px;
-    padding: 8px;
-    background-color: var(--button);
-    border-radius: 100%;
+  position: absolute;
+  top: 25px;
+  bottom: auto;
+  right: 30px;
+  padding: 8px;
+  background-color: var(--button);
+  border-radius: 100%;
 }
 
 #theme img {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 .for-else #theme {
-    top: auto;
-    bottom: 30px;
-    right: 30px;
+  top: auto;
+  bottom: 30px;
+  right: 30px;
 }
 
 p span img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 h2 {
-    font-family: FiraCode;
-    color: var(--hero-text);
-    font-size: 50px;
-    text-align: center;
+  font-family: FiraCode;
+  color: var(--hero-text);
+  font-size: 50px;
+  text-align: center;
 }
 
 h3 {
-    font-family: CascadiaCode;
-    color: var(--text);
-    font-size: 25px;
-    display: inline-block;
-    position: relative;
-    left: 10px;
+  font-family: CascadiaCode;
+  color: var(--text);
+  font-size: 25px;
+  display: inline-block;
+  position: relative;
+  left: 10px;
 }
 
 nav {
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    border-top: var(--text) solid 1px;
-    z-index: 1;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  border-top: var(--text) solid 1px;
+  z-index: 1;
 }
 
 .for-else nav {
-    border-top: none;
-    border-bottom: var(--text) solid 1px;
+  border-top: none;
+  border-bottom: var(--text) solid 1px;
 }
 
 nav ul {
-    white-space: nowrap;
-    margin: 0 auto;
+  white-space: nowrap;
+  margin: 0 auto;
 }
 
 nav ul li {
-    display: inline-block;
-    width: 33%;
-    text-align: center;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
 }
 
 .navtab {
-    display: inline-block;
-    position: relative;
-    color: var(--text);
-    font-family: Roboto;
-    font-size: 25px;
+  display: inline-block;
+  position: relative;
+  color: var(--text);
+  font-family: Roboto;
+  font-size: 25px;
 }
 
 .navtab::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    transition: transform 0.15s ease-out;
-    background-color: var(--focus);
-    box-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.15s ease-out;
+  background-color: var(--focus);
+  box-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
 }
 
 .navtab:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .nav-for-else ul li {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p.formal_intro {
-    color: var(--text);
-    text-align: left;
-    font-family: Roboto;
-    font-size: 28px;
-    padding-right: 25px;
+  color: var(--text);
+  text-align: left;
+  font-family: Roboto;
+  font-size: 28px;
+  padding-right: 25px;
 }
 
 #textlink {
-    text-decoration: none;
-    color: var(--text);
+  text-decoration: none;
+  color: var(--text);
 }
 
 #textlink:hover {
-    filter: drop-shadow(0 0 7px var(--focus));
+  filter: drop-shadow(0 0 7px var(--focus));
 }
 
 .box {
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
 
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
 
 #handles .box {
-    width: 25%;
+  width: 25%;
 }
 
 #skills .logo {
-    width: 55px;
-    height: 55px;
-    margin: 25px;
-    filter: drop-shadow(0 0 3px var(--shadow));
+  width: 55px;
+  height: 55px;
+  margin: 25px;
+  filter: drop-shadow(0 0 3px var(--shadow));
 }
 
 .logo:hover {
-    filter: drop-shadow(0 0 1px var(--glow));
+  filter: drop-shadow(0 0 1px var(--glow));
 }
 
 #handles .logo {
-    width: 45px;
-    height: 45px;
-    margin: 20px;
+  width: 45px;
+  height: 45px;
+  margin: 20px;
 }
 
 #cf_rating {
-    color: var(--text);
-    font-family: Roboto;
-    font-size: 25px;
-    text-shadow: 0 0 7px rgb(211, 8, 8, .3), 0 0 3px var(--shadow);
-    text-align: center;
+  color: var(--text);
+  font-family: Roboto;
+  font-size: 25px;
+  text-shadow: 0 0 7px rgb(211, 8, 8, 0.3), 0 0 3px var(--shadow);
+  text-align: center;
 }
 
 table {
-    color: var(--text);
-    font-family: Roboto;
-    font-size: 27px;
-    margin: 25px;
-    border-collapse: collapse;
+  color: var(--text);
+  font-family: Roboto;
+  font-size: 27px;
+  margin: 25px;
+  border-collapse: collapse;
 }
 
 table .logo {
-    width: 85px;
-    height: 85px;
-    margin: 30px;
+  width: 85px;
+  height: 85px;
+  margin: 30px;
 }
 
 table td {
-    padding-top: 25px;
-    padding-right: 15px;
+  padding-top: 25px;
+  padding-right: 15px;
 }
 
 #current_tab {
-    text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+  text-shadow: 0 0 2px var(--shadow), 0 0 3px var(--shadow);
 }
 
 tr:hover {
-    background-color: #e5e5e52c;
+  background-color: var(--table-hover);
 }
