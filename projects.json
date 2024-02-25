@@ -1,0 +1,52 @@
+[
+  {
+    "name": "HangMan",
+    "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules.",
+    "url": "https://github.com/harshit-jain52/HangMan",
+    "image": {
+      "dark": "Media/hangman_dark.png",
+      "light": "Media/hangman_firefly.png",
+      "alt": "hangman"
+    }
+  },
+  {
+    "name": "Report Generation",
+    "description": "A bash script that generates a user report after parsing a csv file. This project was made in response to one of the selection tasks by KOSS.",
+    "url": "https://github.com/harshit-jain52/KOSS_Teaching_Task",
+    "image": {
+      "dark": "Media/csv_dark.png",
+      "light": "Media/csv_firefly.png",
+      "alt": "csv"
+    }
+  },
+  {
+    "name": "To-Do List",
+    "description": "A simple to-do list with add, edit and delete functionalities, using localStorage API to save list items. This is my first javascript project.",
+    "url": "https://harshit-jain52.github.io/To-Do_List/",
+    "image": {
+      "dark": "Media/list_dark.png",
+      "light": "Media/list_firefly.png",
+      "alt": "to-do list"
+    }
+  },
+  {
+    "name": "HangMan (in React)",
+    "description": "A word guessing game with a feature to use hint, using APIs to get random nouns and their definitions. This is my first React project.",
+    "url": "https://harshit-jain52.github.io/HangMan_React/",
+    "image": {
+      "dark": "Media/hangman_dark.png",
+      "light": "Media/hangman_firefly.png",
+      "alt": "hangman"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "description": "The website you're looking at.",
+    "url": "https://github.com/harshit-jain52/harshit-jain52.github.io",
+    "image": {
+      "dark": "Media/website_dark.png",
+      "light": "Media/website_firefly.png",
+      "alt": "website"
+    }
+  }
+]
