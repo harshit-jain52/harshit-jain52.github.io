@@ -40,6 +40,16 @@
     }
   },
   {
+    "name": "URL Shortener",
+    "description": "Custom domain URL shortener, created using Node & Express with database on MongoDB, and hosted on Vercel.",
+    "url": "https://hjurlshort.vercel.app/",
+    "image": {
+      "dark": "Media/url_dark.png",
+      "light": "Media/url_firefly.png",
+      "alt": "url link"
+    }
+  },
+  {
     "name": "Portfolio Website",
     "description": "The website you're looking at.",
     "url": "https://github.com/harshit-jain52/harshit-jain52.github.io",
