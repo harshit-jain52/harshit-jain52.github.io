@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   getProjects()
     .then((data) => {
       const table = document.querySelector("#project-list");
-      console.log(table);
       table.innerHTML = "";
       data.forEach((project) => {
         let html = `<tr>

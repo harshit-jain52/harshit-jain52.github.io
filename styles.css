@@ -272,6 +272,10 @@ p.formal_intro {
   width: 25%;
 }
 
+#skills .box {
+  flex-wrap: wrap;
+}
+
 #skills .logo {
   width: 55px;
   height: 55px;
