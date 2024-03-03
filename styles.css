@@ -250,6 +250,19 @@ p.formal_intro {
   padding-right: 25px;
 }
 
+#profile-pic {
+  width: 50%;
+  box-shadow: 0 4px 4px 0 var(--glow), 0 6px 20px 0 var(--glow);
+  margin: 25px auto;
+}
+
+#profile-pic img {
+  width: 100%;
+  transform: scale(0.92);
+  display: block;
+  margin: 5px auto;
+}
+
 #textlink {
   text-decoration: none;
   color: var(--text);
@@ -284,13 +297,18 @@ p.formal_intro {
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 1px var(--glow));
+  filter: drop-shadow(0 0 0.75px var(--glow));
 }
 
 #handles .logo {
   width: 45px;
   height: 45px;
   margin: 20px;
+  transition: 0.25s ease-in;
+}
+
+#handles .logo:hover {
+  transform: scale(1.25);
 }
 
 #cf_rating {
