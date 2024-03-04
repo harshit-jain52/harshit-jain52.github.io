@@ -73,6 +73,7 @@ body {
   background-color: var(--bg);
 }
 
+/* Home Page */
 .welcome {
   color: var(--hero-text);
   font-family: Firacode;
@@ -120,8 +121,8 @@ div.intro {
 }
 
 .third div img {
-  width: 3rem;
-  height: 3rem;
+  width: 3.7rem;
+  height: 3.7rem;
   margin-left: 1rem;
 }
 
@@ -144,6 +145,7 @@ div.intro {
   }
 }
 
+/* Theme Button */
 #theme {
   position: absolute;
   top: 25px;
@@ -166,27 +168,7 @@ div.intro {
   position: fixed;
 }
 
-p span img {
-  width: 25px;
-  height: 25px;
-}
-
-h2 {
-  font-family: FiraCode;
-  color: var(--hero-text);
-  font-size: 50px;
-  text-align: center;
-}
-
-h3 {
-  font-family: CascadiaCode;
-  color: var(--text);
-  font-size: 25px;
-  display: inline-block;
-  position: relative;
-  left: 10px;
-}
-
+/* Navbar */
 nav {
   padding: 10px;
   position: sticky;
@@ -239,6 +221,19 @@ nav ul li {
 
 .nav-for-else ul li {
   font-size: 20px;
+}
+
+#current_tab {
+  text-shadow: 0 0 2px var(--shadow), 0 0 3px var(--shadow);
+}
+
+/* About Page */
+
+h2 {
+  font-family: FiraCode;
+  color: var(--hero-text);
+  font-size: 50px;
+  text-align: center;
 }
 
 p.formal_intro {
@@ -295,6 +290,26 @@ p.formal_intro {
   filter: drop-shadow(0 0 3px var(--shadow));
 }
 
+#handles .logo {
+  width: 45px;
+  height: 45px;
+  margin: 20px;
+  transition: 0.25s ease-in;
+}
+
+#handles .logo:hover {
+  transform: scale(1.25);
+}
+
+#cf_rating {
+  color: var(--text);
+  font-family: Roboto;
+  font-size: 25px;
+  text-shadow: 0 0 7px rgb(211, 8, 8, 0.3), 0 0 3px var(--shadow);
+  text-align: center;
+}
+
+/* Projects Page */
 #project-list .logo {
   transition: 0.3s ease-out;
 }
@@ -318,29 +333,10 @@ p.formal_intro {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s ease-in;
-
+  border-radius: 5px;
   background-color: var(--table-hover);
   color: var(--hero-text);
   font-size: 22px;
-  text-align: center;
-}
-
-#handles .logo {
-  width: 45px;
-  height: 45px;
-  margin: 20px;
-  transition: 0.25s ease-in;
-}
-
-#handles .logo:hover {
-  transform: scale(1.25);
-}
-
-#cf_rating {
-  color: var(--text);
-  font-family: Roboto;
-  font-size: 25px;
-  text-shadow: 0 0 7px rgb(211, 8, 8, 0.3), 0 0 3px var(--shadow);
   text-align: center;
 }
 
@@ -361,10 +357,6 @@ table .logo {
 table td {
   padding-top: 25px;
   padding-right: 15px;
-}
-
-#current_tab {
-  text-shadow: 0 0 2px var(--shadow), 0 0 3px var(--shadow);
 }
 
 tr:hover {
