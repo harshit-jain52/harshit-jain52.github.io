@@ -73,33 +73,32 @@ body {
   background-color: var(--bg);
 }
 
-div.intro {
-  text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
-  font-family: Roboto;
-  font-size: 4.06rem;
-}
-
 .welcome {
   color: var(--hero-text);
   font-family: Firacode;
-  font-size: 3.75rem;
+  font-size: 5rem;
   text-transform: uppercase;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg);
+}
+
+div.intro {
+  text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
+  font-family: Roboto;
+  font-size: 6rem;
 }
 
 .animation {
-  height: 4.375rem;
+  height: 5rem;
   overflow: hidden;
   margin-left: 1rem;
 }
 
 .animation div div {
   padding: 0.25rem 0.75rem;
-  height: 4rem;
+  height: 5.2rem;
   margin-bottom: 2.81rem;
   display: inline-block;
 }
@@ -121,8 +120,8 @@ div.intro {
 }
 
 .third div img {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3rem;
+  height: 3rem;
   margin-left: 1rem;
 }
 
@@ -131,17 +130,17 @@ div.intro {
   15%,
   90%,
   100% {
-    margin-top: 0;
+    margin-top: -0.5rem;
   }
 
   30%,
   45% {
-    margin-top: -6.8rem;
+    margin-top: -8.6rem;
   }
 
   60%,
   70% {
-    margin-top: -13.8rem;
+    margin-top: -16.7rem;
   }
 }
 
@@ -252,7 +251,7 @@ p.formal_intro {
 
 #profile-pic {
   width: 50%;
-  box-shadow: 0 4px 4px 0 var(--glow), 0 6px 20px 0 var(--glow);
+  box-shadow: 0 4px 4px 4px var(--glow), 0 6px 20px 0 var(--glow);
   margin: 25px auto;
 }
 
@@ -296,8 +295,34 @@ p.formal_intro {
   filter: drop-shadow(0 0 3px var(--shadow));
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 0.75px var(--glow));
+#project-list .logo {
+  transition: 0.3s ease-out;
+}
+
+#project-list .container:hover .logo {
+  opacity: 0.3;
+}
+
+#project-list .container:hover .text-box {
+  opacity: 1;
+}
+
+#project-list .container {
+  position: relative;
+}
+
+#project-list .container .text-box {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease-in;
+
+  background-color: var(--table-hover);
+  color: var(--hero-text);
+  font-size: 22px;
+  text-align: center;
 }
 
 #handles .logo {

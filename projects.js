@@ -7,17 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
         let html = `<tr>
         <td>
           <a href=${project.url} target="_blank">
-            <img
-              class="logo logo-dark"
-              src=${project.image.dark}
-              alt=${project.alt}
-            />
-            <img
-              class="logo logo-light"
-              src=${project.image.light}
-              alt=${project.alt}
-            />
+            <div class="container">
+              <img
+                class="logo logo-dark"
+                src=${project.image.dark}
+                alt=${project.alt}
+              />
+              <img
+                class="logo logo-light"
+                src=${project.image.light}
+                alt=${project.alt}
+              />
+            <div class="text-box">
+              <div class="text">${project.linktext}</div>
+            </div>
           </a>
+          </div>
         </td>
         <td>
           <strong>${project.name}</strong>
