@@ -9,7 +9,7 @@
   --focus-dark: var(--hero-text-dark);
   --button-dark: var(--focus-dark);
   --glow-dark: var(--shadow-dark);
-  --table-hover-dark: #e5e5e52c;
+  --card-hover-dark: #e5e5e52c;
 
   --bg-light: #c5c6c7;
   --text-light: #0d2636;
@@ -21,7 +21,7 @@
   --focus-light: var(--hero-text-light);
   --button-light: var(--focus-light);
   --glow-light: var(--shadow-light);
-  --table-hover-light: #110f0f4f;
+  --card-hover-light: #110f0f4f;
 }
 
 [color-scheme="dark"] {
@@ -35,7 +35,7 @@
   --shadow: var(--shadow-dark);
   --focus: var(--focus-dark);
   --glow: var(--glow-dark);
-  --table-hover: var(--table-hover-dark);
+  --card-hover: var(--card-hover-dark);
 }
 
 [color-scheme="light"] {
@@ -49,7 +49,7 @@
   --shadow: var(--shadow-light);
   --focus: var(--focus-light);
   --glow: var(--glow-light);
-  --table-hover: var(--table-hover-light);
+  --card-hover: var(--card-hover-light);
 }
 
 @font-face {
@@ -154,6 +154,7 @@ div.intro {
   padding: 8px;
   background-color: var(--button);
   border-radius: 100%;
+  z-index: 1;
 }
 
 #theme img {
@@ -310,7 +311,23 @@ p.formal_intro {
 }
 
 /* Projects Page */
+
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#project-list .container .project-icon {
+  width: 100%;
+  height: 100%;
+}
+
 #project-list .logo {
+  width: 50%;
+  height: auto;
+  padding: 15%;
+  margin: 10%;
   transition: 0.3s ease-out;
 }
 
@@ -320,45 +337,43 @@ p.formal_intro {
 
 #project-list .container:hover .text-box {
   opacity: 1;
+  height: 100%;
 }
 
 #project-list .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  width: 25%;
+  margin: 5px 0;
 }
 
 #project-list .container .text-box {
   position: absolute;
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s ease-in;
-  border-radius: 5px;
-  background-color: var(--table-hover);
-  color: var(--hero-text);
-  font-size: 22px;
+  border-radius: 5%;
+  background-color: var(--card-hover);
+  font-size: 30px;
   text-align: center;
-}
-
-table {
   color: var(--text);
   font-family: Roboto;
-  font-size: 27px;
-  margin: 25px;
-  border-collapse: collapse;
 }
 
-table .logo {
-  width: 85px;
-  height: 85px;
-  margin: 30px;
+#project-list .container .text-box .project-link {
+  background-color: var(--hero-text);
+  color: var(--bg);
 }
 
-table td {
-  padding-top: 25px;
-  padding-right: 15px;
-}
-
-tr:hover {
-  background-color: var(--table-hover);
+#project-list a {
+  text-decoration: none;
 }
