@@ -74,10 +74,15 @@ body {
 }
 
 /* Home Page */
+
+main {
+  display: flex;
+}
+
 .welcome {
   color: var(--hero-text);
   font-family: Firacode;
-  font-size: 5rem;
+  font-size: 4.2vw;
   text-transform: uppercase;
   height: 100vh;
   display: flex;
@@ -88,19 +93,19 @@ body {
 div.intro {
   text-shadow: 0 0 7px var(--shadow), 0 0 3px var(--shadow);
   font-family: Roboto;
-  font-size: 6rem;
+  font-size: 5vw;
 }
 
 .animation {
-  height: 5rem;
+  height: 4.2vw;
   overflow: hidden;
-  margin-left: 1rem;
+  margin-left: 0.83vw;
 }
 
 .animation div div {
-  padding: 0.25rem 0.75rem;
-  height: 5.2rem;
-  margin-bottom: 2.81rem;
+  padding: 0.21vw 0.63vw;
+  height: 4.3vw;
+  margin-bottom: 2.34vw;
   display: inline-block;
 }
 
@@ -121,9 +126,9 @@ div.intro {
 }
 
 .third div img {
-  width: 3.7rem;
-  height: 3.7rem;
-  margin-left: 1rem;
+  width: 3.1vw;
+  height: 3.1vw;
+  margin-left: 0.83vw;
 }
 
 @keyframes text-animation {
@@ -131,17 +136,17 @@ div.intro {
   15%,
   90%,
   100% {
-    margin-top: -0.5rem;
+    margin-top: -0.42vw;
   }
 
   30%,
   45% {
-    margin-top: -8.6rem;
+    margin-top: -7.2vw;
   }
 
   60%,
   70% {
-    margin-top: -16.7rem;
+    margin-top: -13.9vw;
   }
 }
 
@@ -376,4 +381,93 @@ p.formal_intro {
 
 #project-list a {
   text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media screen and (max-width: 1050px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome {
+    font-size: 8.4vw;
+  }
+
+  div.intro {
+    font-size: 10vw;
+  }
+
+  .animation,
+  .animation div div {
+    height: 8.6vw;
+    margin-bottom: 4.68vw;
+  }
+
+  @keyframes text-animation {
+    0%,
+    15%,
+    90%,
+    100% {
+      margin-top: -0.84vw;
+    }
+
+    30%,
+    45% {
+      margin-top: -14.4vw;
+    }
+
+    60%,
+    70% {
+      margin-top: -27.8vw;
+    }
+  }
+
+  .third div img {
+    width: 6.2vw;
+    height: 6.2vw;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 500px) {
+  .welcome {
+    font-size: 10.5vw;
+  }
+
+  div.intro {
+    font-size: 12.5vw;
+  }
+
+  .animation,
+  .animation div div {
+    height: 10.75vw;
+    margin-bottom: 5.85vw;
+  }
+
+  @keyframes text-animation {
+    0%,
+    15%,
+    90%,
+    100% {
+      margin-top: -1.05vw;
+    }
+
+    30%,
+    45% {
+      margin-top: -18vw;
+    }
+
+    60%,
+    70% {
+      margin-top: -34.75vw;
+    }
+  }
+
+  .third div img {
+    width: 7.75vw;
+    height: 7.75vw;
+  }
 }
