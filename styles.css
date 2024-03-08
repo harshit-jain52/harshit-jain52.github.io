@@ -175,6 +175,7 @@ div.intro {
 }
 
 /* Navbar */
+
 nav {
   padding: 10px;
   position: sticky;
@@ -351,7 +352,7 @@ p.formal_intro {
   align-items: center;
   position: relative;
   width: 25%;
-  margin: 5px 0;
+  margin: 0.26vw 0;
 }
 
 #project-list .container .text-box {
@@ -368,7 +369,7 @@ p.formal_intro {
   transition: 0.3s ease-in;
   border-radius: 5%;
   background-color: var(--card-hover);
-  font-size: 30px;
+  font-size: 1.56vw;
   text-align: center;
   color: var(--text);
   font-family: Roboto;
@@ -377,6 +378,9 @@ p.formal_intro {
 #project-list .container .text-box .project-link {
   background-color: var(--hero-text);
   color: var(--bg);
+  width: 50%;
+  transform: translate(50%, 0);
+  border: var(--bg) solid 0.16vw;
 }
 
 #project-list a {
@@ -387,6 +391,8 @@ p.formal_intro {
 
 /* Tablets */
 @media screen and (max-width: 1050px) {
+  /* Home Page */
+
   main {
     flex-direction: column;
     text-align: center;
@@ -429,10 +435,22 @@ p.formal_intro {
     width: 6.2vw;
     height: 6.2vw;
   }
+
+  /* Projects Page */
+
+  #project-list .container {
+    width: 33%;
+  }
+
+  #project-list .container .text-box {
+    font-size: 2.5vw;
+  }
 }
 
 /* Mobiles */
 @media screen and (max-width: 500px) {
+  /* Home Page */
+
   .welcome {
     font-size: 10.5vw;
   }
@@ -469,5 +487,15 @@ p.formal_intro {
   .third div img {
     width: 7.75vw;
     height: 7.75vw;
+  }
+
+  /* Projects Page */
+
+  #project-list .container {
+    width: 48%;
+  }
+
+  #project-list .container .text-box {
+    font-size: 3.5vw;
   }
 }
