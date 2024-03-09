@@ -177,28 +177,25 @@ div.intro {
 /* Navbar */
 
 nav {
-  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0.52vw;
   position: sticky;
   top: 0;
-  border-top: var(--text) solid 1px;
+  border-top: var(--text) solid 0.1vw;
   z-index: 1;
   background-color: var(--bg);
 }
 
 .for-else nav {
   border-top: none;
-  border-bottom: var(--text) solid 1px;
+  border-bottom: var(--text) solid 0.1vw;
 }
 
-nav ul {
-  white-space: nowrap;
-  margin: 0 auto;
-}
-
-nav ul li {
-  display: inline-block;
+nav li {
   width: 33%;
-  text-align: center;
+  list-style-type: none;
 }
 
 .navtab {
@@ -206,7 +203,7 @@ nav ul li {
   position: relative;
   color: var(--text);
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 1.5vw;
 }
 
 .navtab::after {
@@ -214,7 +211,7 @@ nav ul li {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 0.05vw;
   bottom: 0;
   left: 0;
   transition: transform 0.15s ease-out;
@@ -224,10 +221,6 @@ nav ul li {
 
 .navtab:hover::after {
   transform: scaleX(1);
-}
-
-.nav-for-else ul li {
-  font-size: 20px;
 }
 
 #current_tab {
@@ -496,6 +489,25 @@ p.formal_intro {
 
   #cf_rating {
     font-size: 2.6vw;
+  }
+
+  /* Navbar */
+
+  nav {
+    padding: 1.04w;
+    border-top: var(--text) solid 0.2vw;
+  }
+
+  .for-else nav {
+    border-bottom: var(--text) solid 0.2vw;
+  }
+
+  .navtab {
+    font-size: 3vw;
+  }
+
+  .navtab::after {
+    height: 0.1vw;
   }
 }
 
