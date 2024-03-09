@@ -236,10 +236,23 @@ nav ul li {
 
 /* About Page */
 
-h2 {
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile,
+.description {
+  width: 48%;
+  margin: 2%;
+}
+
+h2.name {
   font-family: FiraCode;
   color: var(--hero-text);
-  font-size: 50px;
+  font-size: 2.6vw;
   text-align: center;
 }
 
@@ -247,8 +260,8 @@ p.formal_intro {
   color: var(--text);
   text-align: left;
   font-family: Roboto;
-  font-size: 28px;
-  padding-right: 25px;
+  font-size: 1.46vw;
+  padding-right: 1.3vw;
 }
 
 #profile-pic {
@@ -291,16 +304,16 @@ p.formal_intro {
 }
 
 #skills .logo {
-  width: 55px;
-  height: 55px;
-  margin: 25px;
+  width: 2.865vw;
+  height: 2.865vw;
+  margin: 1.3vw;
   filter: drop-shadow(0 0 3px var(--shadow));
 }
 
 #handles .logo {
-  width: 45px;
-  height: 45px;
-  margin: 20px;
+  width: 2.34vw;
+  height: 2.34vw;
+  margin: 1.04vw;
   transition: 0.25s ease-in;
 }
 
@@ -311,7 +324,7 @@ p.formal_intro {
 #cf_rating {
   color: var(--text);
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 1.3vw;
   text-shadow: 0 0 7px rgb(211, 8, 8, 0.3), 0 0 3px var(--shadow);
   text-align: center;
 }
@@ -445,6 +458,45 @@ p.formal_intro {
   #project-list .container .text-box {
     font-size: 2.5vw;
   }
+
+  /* About Page */
+
+  .about-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile,
+  .description {
+    width: 100%;
+  }
+
+  h2.name {
+    font-size: 5.2vw;
+  }
+
+  p.formal_intro {
+    font-size: 2.92vw;
+  }
+
+  #skills .box {
+    width: 80%;
+  }
+
+  #skills .logo {
+    width: 5.73vw;
+    height: 5.73vw;
+  }
+
+  #handles .logo {
+    width: 4.68vw;
+    height: 4.68vw;
+  }
+
+  #cf_rating {
+    font-size: 2.6vw;
+  }
 }
 
 /* Mobiles */
@@ -497,5 +549,36 @@ p.formal_intro {
 
   #project-list .container .text-box {
     font-size: 3.5vw;
+  }
+
+  /* About Page */
+
+  h2.name {
+    font-size: 6.3vw;
+  }
+
+  p.formal_intro {
+    font-size: 4.5vw;
+    padding: 2%;
+  }
+
+  #skills .box {
+    width: 75%;
+    justify-content: center;
+  }
+
+  #skills .logo {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin: 4%;
+  }
+
+  #handles .logo {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  #cf_rating {
+    font-size: 4vw;
   }
 }
