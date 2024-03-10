@@ -290,11 +290,11 @@ li.current_tab {
 .sidebar {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: 1;
   text-align: center;
-  gap: 1.6vw;
+  gap: 4vw;
   padding: 1.6vw 3.2vw;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 3vw);
   background-color: var(--text);
