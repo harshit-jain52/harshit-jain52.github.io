@@ -22,6 +22,13 @@
   --button-light: var(--focus-light);
   --glow-light: var(--shadow-light);
   --card-hover-light: #110f0f4f;
+
+  --bar-width: 9vw;
+  --bar-height: 1.2vw;
+  --hamburger-gap: 1vw;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  --hamburger-margin: 1.4vw;
+  --hamburger-animation-timing: 200ms ease;
 }
 
 [color-scheme="dark"] {
@@ -176,7 +183,7 @@ div.intro {
 
 /* Navbar */
 
-nav {
+nav.bar {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -188,12 +195,12 @@ nav {
   background-color: var(--bg);
 }
 
-.for-else nav {
+.for-else nav.bar {
   border-top: none;
   border-bottom: var(--text) solid 0.1vw;
 }
 
-nav li {
+nav.bar li {
   width: 33%;
   list-style-type: none;
 }
@@ -223,8 +230,92 @@ nav li {
   transform: scaleX(1);
 }
 
-#current_tab {
+li.current_tab {
   text-shadow: 0 0 2px var(--shadow), 0 0 3px var(--shadow);
+}
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.4142136);
+  --offset: calc(var(--bar-height) / 2);
+  display: none;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  position: absolute;
+  top: var(--hamburger-margin);
+  right: var(--hamburger-margin);
+  z-index: 2;
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu::before,
+.hamburger-menu input,
+.hamburger-menu::after {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--text);
+  border-radius: 100000px;
+  transform-origin: left center;
+  transition: all var(--hamburger-animation-timing);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(-1 * var(--offset));
+  background-color: var(--bg);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 var(--offset);
+  background-color: var(--bg);
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  gap: 1.6vw;
+  padding: 1.6vw 3.2vw;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 3vw);
+  background-color: var(--text);
+  font-family: Roboto;
+  font-size: 3.5vw;
+  max-width: 48vw;
+  min-height: 100vh;
+  translate: 100%;
+  transition: translate var(--hamburger-animation-timing);
+}
+
+.sidebar div a {
+  color: var(--bg);
+  text-decoration: none;
+}
+
+div.current_tab {
+  background-color: var(--focus);
+}
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
 }
 
 /* About Page */
@@ -493,12 +584,12 @@ p.formal_intro {
 
   /* Navbar */
 
-  nav {
+  nav.bar {
     padding: 1.04w;
     border-top: var(--text) solid 0.2vw;
   }
 
-  .for-else nav {
+  .for-else nav.bar {
     border-bottom: var(--text) solid 0.2vw;
   }
 
@@ -592,5 +683,16 @@ p.formal_intro {
 
   #cf_rating {
     font-size: 4vw;
+  }
+
+  /* Hamburger Menu */
+
+  .for-else nav.bar {
+    display: none;
+  }
+
+  .hamburger-menu,
+  .sidebar {
+    display: flex;
   }
 }
