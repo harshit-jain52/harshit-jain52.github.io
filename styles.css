@@ -7,7 +7,6 @@
   --hero3-dark: #1f2833;
   --shadow-dark: var(--hero-text-dark);
   --focus-dark: var(--hero-text-dark);
-  --button-dark: var(--focus-dark);
   --glow-dark: var(--shadow-dark);
   --card-hover-dark: #e5e5e52c;
 
@@ -19,7 +18,6 @@
   --hero3-light: #c10528;
   --shadow-light: var(--hero-text-light);
   --focus-light: var(--hero-text-light);
-  --button-light: var(--focus-light);
   --glow-light: var(--shadow-light);
   --card-hover-light: #110f0f4f;
 
@@ -27,7 +25,7 @@
   --bar-height: 1.2vw;
   --hamburger-gap: 1vw;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  --hamburger-margin: 1.4vw;
+  --hamburger-margin: 1.6vw;
   --hamburger-animation-timing: 200ms ease;
 }
 
@@ -38,7 +36,6 @@
   --hero1: var(--hero1-dark);
   --hero2: var(--hero2-dark);
   --hero3: var(--hero3-dark);
-  --button: var(--button-dark);
   --shadow: var(--shadow-dark);
   --focus: var(--focus-dark);
   --glow: var(--glow-dark);
@@ -52,7 +49,6 @@
   --hero1: var(--hero1-light);
   --hero2: var(--hero2-light);
   --hero3: var(--hero3-light);
-  --button: var(--button-light);
   --shadow: var(--shadow-light);
   --focus: var(--focus-light);
   --glow: var(--glow-light);
@@ -158,26 +154,28 @@ div.intro {
 }
 
 /* Theme Button */
+
 #theme {
   position: absolute;
-  top: 25px;
-  bottom: auto;
-  right: 30px;
-  padding: 8px;
-  background-color: var(--button);
+  top: 1.3vw;
+  right: 1.3vw;
+  padding: 0.41vw;
+  background-color: var(--text);
+  border: none;
   border-radius: 100%;
   z-index: 1;
+  box-shadow: 0 2px 16px 0 var(--shadow), 0 5px 50px 0 var(--shadow);
 }
 
 #theme img {
-  height: 30px;
-  width: 30px;
+  height: 1.85vw;
+  width: 1.85vw;
 }
 
 .for-else #theme {
   top: auto;
-  bottom: 30px;
-  right: 30px;
+  bottom: 1.56vw;
+  right: 1.56vw;
   position: fixed;
 }
 
@@ -296,11 +294,11 @@ li.current_tab {
   text-align: center;
   gap: 4vw;
   padding: 1.6vw 3.2vw;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 3vw);
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 7vw);
   background-color: var(--text);
   font-family: Roboto;
   font-size: 3.5vw;
-  max-width: 48vw;
+  width: 30vw;
   min-height: 100vh;
   translate: 100%;
   transition: translate var(--hamburger-animation-timing);
@@ -316,6 +314,10 @@ div.current_tab {
 }
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
+}
+
+.hamburger-menu:has(input:checked) + #theme {
+  border: 1px solid black;
 }
 
 /* About Page */
@@ -342,10 +344,11 @@ h2.name {
 
 p.formal_intro {
   color: var(--text);
-  text-align: left;
+  text-align: justify;
   font-family: Roboto;
-  font-size: 1.46vw;
+  font-size: 1.5vw;
   padding-right: 1.3vw;
+  margin: 5px;
 }
 
 #profile-pic {
@@ -600,6 +603,24 @@ p.formal_intro {
   .navtab::after {
     height: 0.1vw;
   }
+
+  /* Theme Button */
+
+  #theme {
+    top: 2.6vw;
+    right: 2.6vw;
+    padding: 0.82vw;
+  }
+
+  #theme img {
+    height: 3.7vw;
+    width: 3.7vw;
+  }
+
+  .for-else #theme {
+    bottom: 3.12vw;
+    right: 3.12vw;
+  }
 }
 
 /* Mobiles */
@@ -685,6 +706,19 @@ p.formal_intro {
     font-size: 4vw;
   }
 
+  nav.bar {
+    padding: 2vw;
+    border-top: var(--text) solid 0.5vw;
+  }
+
+  .navtab {
+    font-size: 5vw;
+  }
+
+  .navtab::after {
+    height: 0.2vw;
+  }
+
   /* Hamburger Menu */
 
   .for-else nav.bar {
@@ -694,5 +728,23 @@ p.formal_intro {
   .hamburger-menu,
   .sidebar {
     display: flex;
+  }
+
+  /* Theme Button*/
+
+  #theme {
+    padding: 1vw;
+  }
+
+  #theme img {
+    height: var(--hamburger-height);
+    width: auto;
+  }
+
+  .for-else #theme {
+    position: absolute;
+    top: calc(var(--hamburger-margin) - 0.7vw);
+    right: calc(2 * var(--hamburger-margin) + var(--bar-width) + 1.3vw);
+    bottom: auto;
   }
 }
