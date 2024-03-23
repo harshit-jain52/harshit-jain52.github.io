@@ -32,6 +32,10 @@
     "alt": "node.js"
   },
   {
+    "image": "Media/Mongo_Logo.png",
+    "alt": "MongoDB"
+  },
+  {
     "image": "Media/Bash_Logo.png",
     "alt": "Bash"
   }
