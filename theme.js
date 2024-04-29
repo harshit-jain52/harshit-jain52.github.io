@@ -2,11 +2,17 @@ const loadTheme = (theme) => {
   const root = document.querySelector(":root");
   const darkLogos = document.querySelectorAll(".logo-dark");
   const lightLogos = document.querySelectorAll(".logo-light");
+  const langsCard = document.querySelector(".langs-card");
 
   root.setAttribute("color-scheme", `${theme}`);
   localStorage.setItem("hjpf.theme", `${theme}`);
 
   if (theme == "dark") {
+    if (langsCard) {
+      langsCard.src =
+        "https://github-readme-stats.vercel.app/api/top-langs/?username=harshit-jain52&hide_progress=true&langs_count=10&theme=algolia";
+    }
+
     darkLogos.forEach((logo) => {
       logo.style.display = "flex";
     });
@@ -18,6 +24,11 @@ const loadTheme = (theme) => {
     document.querySelector(".dark").style.display = "flex";
     document.querySelector(".light").style.display = "none";
   } else {
+    if (langsCard) {
+      langsCard.src =
+        "https://github-readme-stats.vercel.app/api/top-langs/?username=harshit-jain52&hide_progress=true&langs_count=10&theme=buefy";
+    }
+
     darkLogos.forEach((logo) => {
       logo.style.display = "none";
     });

@@ -386,17 +386,6 @@ p.formal_intro {
   width: 25%;
 }
 
-#skills .box {
-  flex-wrap: wrap;
-}
-
-#skills .logo {
-  width: 2.865vw;
-  height: 2.865vw;
-  margin: 1.3vw;
-  filter: drop-shadow(0 0 3px var(--shadow));
-}
-
 #handles .logo {
   width: 2.34vw;
   height: 2.34vw;
@@ -406,6 +395,14 @@ p.formal_intro {
 
 #handles .logo:hover {
   transform: scale(1.25);
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 50%;
 }
 
 #cf_rating {
@@ -567,15 +564,6 @@ p.formal_intro {
     font-size: 2.92vw;
   }
 
-  #skills .box {
-    width: 80%;
-  }
-
-  #skills .logo {
-    width: 5.73vw;
-    height: 5.73vw;
-  }
-
   #handles .logo {
     width: 4.68vw;
     height: 4.68vw;
@@ -684,17 +672,6 @@ p.formal_intro {
   p.formal_intro {
     font-size: 4.5vw;
     padding: 2%;
-  }
-
-  #skills .box {
-    width: 75%;
-    justify-content: center;
-  }
-
-  #skills .logo {
-    width: 7.5vw;
-    height: 7.5vw;
-    margin: 4%;
   }
 
   #handles .logo {
