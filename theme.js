@@ -10,7 +10,7 @@ const loadTheme = (theme) => {
   if (theme == "dark") {
     if (langsCard) {
       langsCard.src =
-        "https://github-readme-stats.vercel.app/api/top-langs/?username=harshit-jain52&hide_progress=true&langs_count=10&theme=algolia";
+        "https://github-readme-stats.vercel.app/api/top-langs/?username=harshit-jain52&hide_progress=true&hide=cmake&langs_count=10&theme=algolia";
     }
 
     darkLogos.forEach((logo) => {
@@ -26,7 +26,7 @@ const loadTheme = (theme) => {
   } else {
     if (langsCard) {
       langsCard.src =
-        "https://github-readme-stats.vercel.app/api/top-langs/?username=harshit-jain52&hide_progress=true&langs_count=10&theme=buefy";
+        "https://github-readme-stats.vercel.app/api/top-langs/?username=harshit-jain52&hide_progress=true&hide=cmake&langs_count=10&theme=buefy";
     }
 
     darkLogos.forEach((logo) => {
