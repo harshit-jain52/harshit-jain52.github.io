@@ -8,7 +8,7 @@
   --shadow-dark: var(--hero-text-dark);
   --focus-dark: var(--hero-text-dark);
   --glow-dark: var(--shadow-dark);
-  --card-hover-dark: #e5e5e52c;
+  --card-dark: #e5e5e52c;
 
   --bg-light: #c5c6c7;
   --text-light: #0d2636;
@@ -19,7 +19,7 @@
   --shadow-light: var(--hero-text-light);
   --focus-light: var(--hero-text-light);
   --glow-light: var(--shadow-light);
-  --card-hover-light: #110f0f4f;
+  --card-light: #110f0f4f;
 
   --bar-width: 9vw;
   --bar-height: 1.2vw;
@@ -39,7 +39,8 @@
   --shadow: var(--shadow-dark);
   --focus: var(--focus-dark);
   --glow: var(--glow-dark);
-  --card-hover: var(--card-hover-dark);
+  --card: var(--card-dark);
+  --card-inverse: var(--card-light);
 }
 
 [color-scheme="light"] {
@@ -52,7 +53,8 @@
   --shadow: var(--shadow-light);
   --focus: var(--focus-light);
   --glow: var(--glow-light);
-  --card-hover: var(--card-hover-light);
+  --card: var(--card-light);
+  --card-inverse: var(--card-dark);
 }
 
 @font-face {
@@ -465,7 +467,7 @@ p.formal_intro {
   transform: translate(-50%, -50%);
   transition: 0.3s ease-in;
   border-radius: 5%;
-  background-color: var(--card-hover);
+  background-color: var(--card);
   font-size: 1.56vw;
   text-align: center;
   color: var(--text);
@@ -482,6 +484,51 @@ p.formal_intro {
 
 #project-list a {
   text-decoration: none;
+}
+
+.timeline {
+  position: relative;
+  max-width: 80vw;
+  margin: 100px auto;
+
+  & .container {
+    padding: 10px 30px;
+    position: relative;
+    width: 50%;
+    background: var(--card);
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      left: 0;
+      & img{
+        right: -30px;
+      }
+    }
+
+    &:nth-child(even) {
+      left: 50%;
+      & img{
+        left: -30px;
+      }
+    }
+
+    & .textbox {
+      padding: 35px;
+      position: relative;
+      font-size: 20px;
+      font-family: Roboto;
+      color: var(--text);
+      background: var(--card-inverse);
+      border-radius: 10px;
+
+    }
+
+    & img {
+      position: absolute;
+      width: 60px;
+      top: 30px;
+    }
+  }
 }
 
 /* MEDIA QUERIES */
