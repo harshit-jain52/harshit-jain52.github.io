@@ -4,9 +4,10 @@
     "description": "desc, stack",
     "time": "Apr 2024",
     "url": "https://harshit-jain52.github.io/HangMan_React/",
+    "stack": "mongo,express,react,nodejs,tailwind",
     "image": {
-      "dark": "Media/hangman_dark.png",
-      "light": "Media/hangman_firefly.png",
+      "dark": "Media/cart_dark.png",
+      "light": "Media/cart_firefly.png",
       "alt": "hangman"
     },
     "linktext": "GitHub Page"
@@ -16,6 +17,7 @@
     "description": "Custom domain URL shortener, created using Node & Express with database on MongoDB, and hosted on Vercel.",
     "time": "Feb 2024",
     "url": "https://hjurlshort.vercel.app/",
+    "stack": "mongo,express,nodejs",
     "image": {
       "dark": "Media/url_dark.png",
       "light": "Media/url_firefly.png",
@@ -24,10 +26,11 @@
     "linktext": "Vercel App"
   },
   {
-    "name": "HangMan (in React)",
+    "name": "HangMan",
     "description": "A word guessing game with a feature to use hint, using APIs to get random nouns and their definitions. This is my first React project.",
     "time": "Dec 2023",
     "url": "https://harshit-jain52.github.io/HangMan_React/",
+    "stack": "react",
     "image": {
       "dark": "Media/hangman_dark.png",
       "light": "Media/hangman_firefly.png",
@@ -40,6 +43,7 @@
     "description": "A simple to-do list with add, edit and delete functionalities, using localStorage API to save list items. This is my first javascript project.",
     "time": "Dec 2023",
     "url": "https://harshit-jain52.github.io/To-Do_List/",
+    "stack": "html,css,js",
     "image": {
       "dark": "Media/list_dark.png",
       "light": "Media/list_firefly.png",
@@ -52,6 +56,7 @@
     "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules.",
     "time": "Oct 2021",
     "url": "https://github.com/harshit-jain52/HangMan",
+    "stack": "py",
     "image": {
       "dark": "Media/hangman_dark.png",
       "light": "Media/hangman_firefly.png",

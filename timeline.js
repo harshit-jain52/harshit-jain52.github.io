@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const table = document.querySelector(".timeline");
       table.innerHTML = "";
       data.forEach((project) => {
+        let icons = project.stack.split(",").map((item) => 
+          `<img src="https://skillicons.dev/icons?i=${item}" alt="${item}" />`
+        ).join("");
         let html = `<div class="container">
         <div class="circle">
             <img
@@ -18,7 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
             />
         </div>
         <div class="textbox">
+          <div class="head">
             <h2>${project.name}</h2>
+            <div class="stack">
+            ${icons}
+            </div>
+          </div>
             <small>${project.time}</small>
             <p>${project.description}</p>
             <span class="arrow"></span>
