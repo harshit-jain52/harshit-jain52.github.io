@@ -8,7 +8,7 @@
   --shadow-dark: var(--hero-text-dark);
   --focus-dark: var(--hero-text-dark);
   --glow-dark: var(--shadow-dark);
-  --card-dark: #e5e5e52c;
+  --card-dark: #333131;
 
   --bg-light: #c5c6c7;
   --text-light: #0d2636;
@@ -19,7 +19,7 @@
   --shadow-light: var(--hero-text-light);
   --focus-light: var(--hero-text-light);
   --glow-light: var(--shadow-light);
-  --card-light: #110f0f4f;
+  --card-light: #8d8d8e;
 
   --bar-width: 9vw;
   --bar-height: 1.2vw;
@@ -492,23 +492,32 @@ p.formal_intro {
   margin: 100px auto;
 
   & .container {
-    padding: 10px 30px;
+    padding: 10px 50px;
     position: relative;
     width: 50%;
-    background: var(--card);
     box-sizing: border-box;
 
     &:nth-child(odd) {
       left: 0;
-      & img{
+      & .circle{
         right: -30px;
+      }
+
+      & .textbox .arrow{
+        right: -15px;
+        border-left: 15px solid var(--card);
       }
     }
 
     &:nth-child(even) {
       left: 50%;
-      & img{
+      & .circle{
         left: -30px;
+      }
+
+      & .textbox .arrow{
+        left: -15px;
+        border-right: 15px solid var(--card);
       }
     }
 
@@ -518,16 +527,48 @@ p.formal_intro {
       font-size: 20px;
       font-family: Roboto;
       color: var(--text);
-      background: var(--card-inverse);
+      background: var(--card);
       border-radius: 10px;
 
+      & .arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 25px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        z-index: 1;
+      }
     }
 
-    & img {
+    & .circle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      width: 60px;
       top: 30px;
+      width: 60px;
+      height: 60px;
+      background: var(--card);
+      border-radius: 50%;
+      z-index: 10;
     }
+    
+    & img {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: var(--card);
+    z-index: -1;
+    left: 50%;
+    top: 0;
   }
 }
 

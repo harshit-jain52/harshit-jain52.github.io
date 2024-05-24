@@ -2,6 +2,7 @@
   {
     "name": "Video Rental System",
     "description": "desc, stack",
+    "time": "Apr 2024",
     "url": "https://harshit-jain52.github.io/HangMan_React/",
     "image": {
       "dark": "Media/hangman_dark.png",
@@ -13,6 +14,7 @@
   {
     "name": "URL Shortener",
     "description": "Custom domain URL shortener, created using Node & Express with database on MongoDB, and hosted on Vercel.",
+    "time": "Feb 2024",
     "url": "https://hjurlshort.vercel.app/",
     "image": {
       "dark": "Media/url_dark.png",
@@ -24,6 +26,7 @@
   {
     "name": "HangMan (in React)",
     "description": "A word guessing game with a feature to use hint, using APIs to get random nouns and their definitions. This is my first React project.",
+    "time": "Dec 2023",
     "url": "https://harshit-jain52.github.io/HangMan_React/",
     "image": {
       "dark": "Media/hangman_dark.png",
@@ -35,6 +38,7 @@
   {
     "name": "To-Do List",
     "description": "A simple to-do list with add, edit and delete functionalities, using localStorage API to save list items. This is my first javascript project.",
+    "time": "Dec 2023",
     "url": "https://harshit-jain52.github.io/To-Do_List/",
     "image": {
       "dark": "Media/list_dark.png",
@@ -46,6 +50,7 @@
   {
     "name": "HangMan",
     "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules.",
+    "time": "Oct 2021",
     "url": "https://github.com/harshit-jain52/HangMan",
     "image": {
       "dark": "Media/hangman_dark.png",

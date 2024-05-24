@@ -5,20 +5,23 @@ document.addEventListener("DOMContentLoaded", () => {
       table.innerHTML = "";
       data.forEach((project) => {
         let html = `<div class="container">
-        <img
-            class="logo logo-dark"
-            src=${project.image.dark}
-            alt=${project.alt}
-        />
-        <img
-            class="logo logo-light"
-            src=${project.image.light}
-            alt=${project.alt}
-        />
+        <div class="circle">
+            <img
+                class="logo logo-dark"
+                src=${project.image.dark}
+                alt=${project.alt}
+            />
+            <img
+                class="logo logo-light"
+                src=${project.image.light}
+                alt=${project.alt}
+            />
+        </div>
         <div class="textbox">
             <h2>${project.name}</h2>
-            <small>2024</small>
-            <p>${project.description}</p> 
+            <small>${project.time}</small>
+            <p>${project.description}</p>
+            <span class="arrow"></span>
         </div>
       </div>`;
 
