@@ -1,14 +1,27 @@
 [
   {
+    "name": "Chat App",
+    "description": "Minimal real-time chatting app created using Flutter and Firebase. This is my first Flutter project.",
+    "time": "May 2024",
+    "url": "https://harshit-jain52.github.io/HangMan_React/",
+    "stack": "dart,flutter,firebase",
+    "image": {
+      "dark": "Media/chat_dark.png",
+      "light": "Media/chat_firefly.png",
+      "alt": "Chat App"
+    },
+    "linktext": "GitHub Page"
+  },
+  {
     "name": "Video Rental System",
-    "description": "desc, stack",
+    "description": "A full-stack web application for renting/buying movies, created using MERN stack, with JWT authentication, payment gateway integration and a movie recommendation system.",
     "time": "Apr 2024",
     "url": "https://harshit-jain52.github.io/HangMan_React/",
     "stack": "mongo,express,react,nodejs,tailwind",
     "image": {
       "dark": "Media/cart_dark.png",
       "light": "Media/cart_firefly.png",
-      "alt": "hangman"
+      "alt": "E-commerce"
     },
     "linktext": "GitHub Page"
   },
