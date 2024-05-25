@@ -1,35 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
   getProjects()
     .then((data) => {
-      const table = document.querySelector("#project-list");
+      const table = document.querySelector(".timeline");
       table.innerHTML = "";
       data.forEach((project) => {
-        let html = `<div class = "container">
-            <div class="project-icon">
-              <img
+        let icons = project.stack.split(",").map((item) => 
+          `<img src="https://skillicons.dev/icons?i=${item}" alt="${item}" />`
+        ).join("");
+        let html = `<div class="container">
+        <div class="circle">
+            <img
                 class="logo logo-dark"
                 src=${project.image.dark}
                 alt=${project.alt}
-              />
-              <img
+            />
+            <img
                 class="logo logo-light"
                 src=${project.image.light}
                 alt=${project.alt}
-              />
-            <div class="text-box">
-              <div class="text">
-                <strong>${project.name}</strong>
-                <br/><br/>
-                ${project.description}
-              </div>
-              <a href=${project.url} target="_blank">
-                <div class=project-link>
-                  ${project.linktext}
-                </div>
-              </a>
+            />
+        </div>
+        <div class="textbox">
+          <div class="head">
+            <h2>${project.name}</h2>
+            <div class="stack">
+            ${icons}
             </div>
           </div>
-        </div>`;
+            <small>${project.time}</small>
+            <p>${project.description}</p>
+            <span class="arrow"></span>
+        </div>
+      </div>`;
 
         table.innerHTML = table.innerHTML + html;
       });

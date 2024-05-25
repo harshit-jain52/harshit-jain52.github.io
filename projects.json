@@ -43,7 +43,7 @@
     "description": "A word guessing game with a feature to use hint, using APIs to get random nouns and their definitions. This is my first React project.",
     "time": "Dec 2023",
     "url": "https://harshit-jain52.github.io/HangMan_React/",
-    "stack": "react",
+    "stack": "react,sass",
     "image": {
       "dark": "Media/hangman_dark.png",
       "light": "Media/hangman_firefly.png",
