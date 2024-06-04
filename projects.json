@@ -1,16 +1,5 @@
 [
   {
-    "name": "LinkTree",
-    "description": "Single page web application to showcase important links and handles.",
-    "time": "Jun 2024",
-    "stack": "go,ts,react,vite,mongo",
-    "image": {
-      "dark": "Media/url_dark.png",
-      "light": "Media/url_firefly.png",
-      "alt": "Link Tree"
-    }
-  },
-  {
     "name": "Chat App",
     "description": "Minimal real-time chatting app created using Flutter and Firebase. This is my first Flutter project.",
     "time": "May 2024",
