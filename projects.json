@@ -1,5 +1,16 @@
 [
   {
+    "name": "LinkTree",
+    "description": "A simple link tree web app, to showcase users' various links at one place. This is my first Go project.",
+    "time": "Jun 2024",
+    "stack": "go,vite",
+    "image": {
+      "dark": "Media/url_dark.png",
+      "light": "Media/url_firefly.png",
+      "alt": "Link Tree"
+    }
+  },
+  {
     "name": "Chat App",
     "description": "Minimal real-time chatting app created using Flutter and Firebase. This is my first Flutter project.",
     "time": "May 2024",
