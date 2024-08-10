@@ -236,7 +236,11 @@ nav.bar li {
 }
 
 li.current_tab {
-  text-shadow: 0 0 2px var(--shadow), 0 0 3px var(--shadow);
+  span.navtab {
+    background: var(--card);
+    padding: 0.1vw 0.3vw 0.1vw 0.3vw;
+    border-radius: 10%;
+  }
 }
 
 /* Hamburger Menu */
