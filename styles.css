@@ -58,11 +58,6 @@
 }
 
 @font-face {
-  font-family: CascadiaCode;
-  src: url(Fonts/CascadiaCode_Regular.ttf);
-}
-
-@font-face {
   font-family: FiraCode;
   src: url(Fonts/FiraCode_Retina.ttf);
 }
@@ -70,6 +65,16 @@
 @font-face {
   font-family: Roboto;
   src: url(Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(Fonts/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Fonts/Poppins-Regular.ttf);
 }
 
 body {
@@ -209,8 +214,8 @@ nav.bar li {
   display: inline-block;
   position: relative;
   color: var(--text);
-  font-family: Roboto;
-  font-size: 1.5vw;
+  font-family: LeagueSpartan;
+  font-size: 1.6vw;
 }
 
 .navtab::after {
@@ -298,8 +303,8 @@ li.current_tab {
   padding: 1.6vw 3.2vw;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 7vw);
   background-color: var(--text);
-  font-family: Roboto;
-  font-size: 3.5vw;
+  font-family: LeagueSpartan;
+  font-size: 3.7vw;
   width: 30vw;
   min-height: 100vh;
   translate: 100%;
@@ -338,16 +343,16 @@ div.current_tab {
 }
 
 h2.name {
-  font-family: FiraCode;
+  font-family: Poppins;
   color: var(--hero-text);
-  font-size: 2.6vw;
+  font-size: 2.7vw;
   text-align: center;
 }
 
 p.formal_intro {
   color: var(--text);
   text-align: justify;
-  font-family: Roboto;
+  font-family: LeagueSpartan;
   font-size: 1.5vw;
   padding-right: 1.3vw;
   margin: 5px;
@@ -409,8 +414,8 @@ p.formal_intro {
 
 #cf_rating {
   color: var(--text);
-  font-family: Roboto;
-  font-size: 1.3vw;
+  font-family: LeagueSpartan;
+  font-size: 1.5vw;
   text-shadow: 0 0 7px rgb(211, 8, 8, 0.3), 0 0 3px var(--shadow);
   text-align: center;
 }
@@ -455,8 +460,8 @@ p.formal_intro {
     & .textbox {
       padding: 1.823vw;
       position: relative;
-      font-size: 1.04vw;
-      font-family: Roboto;
+      font-size: 1.2vw;
+      font-family: LeagueSpartan;
       color: var(--text);
       background: var(--card);
       border-radius: 10px;
