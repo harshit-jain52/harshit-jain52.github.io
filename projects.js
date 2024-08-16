@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
           `<img src="https://skillicons.dev/icons?i=${item}" alt="${item}" />`
         ).join("");
         let html = `<div class="container">
-        <div class="circle">
+        <a class="circle" href="https://github.com/harshit-jain52/${project.repo}" target="_blank">
             <img
                 class="logo logo-dark"
                 src=${project.image.dark}
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 src=${project.image.light}
                 alt=${project.alt}
             />
-        </div>
+        </a>
         <div class="textbox">
           <div class="head">
             <h2>${project.name}</h2>

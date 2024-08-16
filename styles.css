@@ -416,14 +416,6 @@ p.formal_intro {
   width: 50%;
 }
 
-#cf_rating {
-  color: var(--text);
-  font-family: LeagueSpartan;
-  font-size: 1.5vw;
-  text-shadow: 0 0 7px rgb(211, 8, 8, 0.3), 0 0 3px var(--shadow);
-  text-align: center;
-}
-
 /* Projects Page */
 
 .timeline {
@@ -672,10 +664,6 @@ p.formal_intro {
     height: 4.68vw;
   }
 
-  #cf_rating {
-    font-size: 2.6vw;
-  }
-
   /* Navbar */
 
   nav.bar {
@@ -839,10 +827,6 @@ p.formal_intro {
   #handles .logo {
     width: 6vw;
     height: 6vw;
-  }
-
-  #cf_rating {
-    font-size: 4vw;
   }
 
   nav.bar {

@@ -8,7 +8,8 @@
       "dark": "Media/url_dark.png",
       "light": "Media/url_firefly.png",
       "alt": "Link Tree"
-    }
+    },
+    "repo":"LinkTree"
   },
   {
     "name": "Chat App",
@@ -19,7 +20,8 @@
       "dark": "Media/chat_dark.png",
       "light": "Media/chat_firefly.png",
       "alt": "Chat App"
-    }
+    },
+    "repo":"ChatApp"
   },
   {
     "name": "Video Rental System",
@@ -30,7 +32,8 @@
       "dark": "Media/cart_dark.png",
       "light": "Media/cart_firefly.png",
       "alt": "E-commerce"
-    }
+    },
+    "repo":"VRS-Backend"
   },
   {
     "name": "URL Shortener",
@@ -41,7 +44,8 @@
       "dark": "Media/url_dark.png",
       "light": "Media/url_firefly.png",
       "alt": "url link"
-    }
+    },
+    "repo":"url-shortener"
   },
   {
     "name": "HangMan",
@@ -52,7 +56,8 @@
       "dark": "Media/hangman_dark.png",
       "light": "Media/hangman_firefly.png",
       "alt": "hangman"
-    }
+    },
+    "repo":"HangMan_React"
   },
   {
     "name": "To-Do List",
@@ -63,7 +68,8 @@
       "dark": "Media/list_dark.png",
       "light": "Media/list_firefly.png",
       "alt": "to-do list"
-    }
+    },
+    "repo":"To-Do_List"
   },
   {
     "name": "HangMan",
@@ -74,6 +80,7 @@
       "dark": "Media/hangman_dark.png",
       "light": "Media/hangman_firefly.png",
       "alt": "hangman"
-    }
+    },
+    "repo":"HangMan"
   }
 ]
