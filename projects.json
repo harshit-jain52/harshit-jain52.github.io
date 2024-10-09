@@ -72,6 +72,18 @@
     "repo":"To-Do_List"
   },
   {
+    "name": "CSV Parser",
+    "description": "KOSS Selection Task; A bash script to parse CSV file and display it in a given formatted way. This is my first time working with shell.",
+    "time": "Oct 2023",
+    "stack": "bash",
+    "image": {
+      "dark": "Media/csv_dark.png",
+      "light": "Media/csv_firefly.png",
+      "alt": "to-do list"
+    },
+    "repo":"KOSS_Teaching_Task"
+  },
+  {
     "name": "HangMan",
     "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules.",
     "time": "Oct 2021",
