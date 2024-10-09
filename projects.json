@@ -74,7 +74,7 @@
   {
     "name": "CSV Parser",
     "description": "KOSS Selection Task; A bash script to parse CSV file and display it in a given formatted way. This is my first time working with shell.",
-    "time": "Oct 2023",
+    "time": "May 2023",
     "stack": "bash",
     "image": {
       "dark": "Media/csv_dark.png",
