@@ -1,5 +1,17 @@
 [
   {
+    "name": "Tree View App",
+    "description": "A responsive MERN app to display a directory structure recursively in a tree view. It was dockerized and deployed on DigitalOcean.",
+    "time": "Oct 2024",
+    "stack": "docker,react,nodejs",
+    "image": {
+      "dark": "Media/folder_dark.png",
+      "light": "Media/folder_firefly.png",
+      "alt": "Link Tree"
+    },
+    "repo": "TreeView"
+  },
+  {
     "name": "LinkTree",
     "description": "A simple link tree web app, to showcase users' various links at one place. This is my first Go project.",
     "time": "Jun 2024",
@@ -9,7 +21,7 @@
       "light": "Media/url_firefly.png",
       "alt": "Link Tree"
     },
-    "repo":"LinkTree"
+    "repo": "LinkTree"
   },
   {
     "name": "Chat App",
@@ -21,7 +33,7 @@
       "light": "Media/chat_firefly.png",
       "alt": "Chat App"
     },
-    "repo":"ChatApp"
+    "repo": "ChatApp"
   },
   {
     "name": "Video Rental System",
@@ -33,7 +45,7 @@
       "light": "Media/cart_firefly.png",
       "alt": "E-commerce"
     },
-    "repo":"VRS-Backend"
+    "repo": "VRS-Backend"
   },
   {
     "name": "URL Shortener",
@@ -45,7 +57,7 @@
       "light": "Media/url_firefly.png",
       "alt": "url link"
     },
-    "repo":"url-shortener"
+    "repo": "url-shortener"
   },
   {
     "name": "HangMan",
@@ -57,7 +69,7 @@
       "light": "Media/hangman_firefly.png",
       "alt": "hangman"
     },
-    "repo":"HangMan_React"
+    "repo": "HangMan_React"
   },
   {
     "name": "To-Do List",
@@ -69,11 +81,11 @@
       "light": "Media/list_firefly.png",
       "alt": "to-do list"
     },
-    "repo":"To-Do_List"
+    "repo": "To-Do_List"
   },
   {
     "name": "CSV Parser",
-    "description": "KOSS Selection Task; A bash script to parse CSV file and display it in a given formatted way. This is my first time working with shell.",
+    "description": "A bash script to parse CSV file and display it in a given formatted way. This is my first time working with shell.",
     "time": "May 2023",
     "stack": "bash",
     "image": {
@@ -81,7 +93,7 @@
       "light": "Media/csv_firefly.png",
       "alt": "to-do list"
     },
-    "repo":"KOSS_Teaching_Task"
+    "repo": "KOSS_Teaching_Task"
   },
   {
     "name": "HangMan",
@@ -93,6 +105,6 @@
       "light": "Media/hangman_firefly.png",
       "alt": "hangman"
     },
-    "repo":"HangMan"
+    "repo": "HangMan"
   }
 ]
