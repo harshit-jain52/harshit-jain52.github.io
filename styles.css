@@ -375,13 +375,18 @@ p.formal_intro {
   margin: 5px auto;
 }
 
-#textlink {
+.textlink {
   text-decoration: none;
   color: var(--text);
 }
 
-#textlink:hover {
+.textlink:hover {
   filter: drop-shadow(0 0 7px var(--focus));
+}
+
+.bloglink {
+  text-decoration: underline;
+  color: var(--hero-text);
 }
 
 .box {
