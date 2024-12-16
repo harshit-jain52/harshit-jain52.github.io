@@ -1,1 +1,1 @@
-My Portfolio (and my first Web-Dev project)
+My Portfolio.

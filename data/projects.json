@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Next-Gen Team Builder with Predictive AI",
+    "description": "Inter-IIT Tech Meet 13.0 Mid-Prep Task by Dream11",
+    "time": "Nov-Dec 2024",
+    "stack": "fastapi,react,redux,postgres",
+    "image": {
+      "dark": "Media/Projects/dreams11_white.png",
+      "light": "Media/Projects/dreams11_red.png",
+      "alt": "Dream11"
+    },
+    "link": "https://drive.google.com/file/d/1hSaPmtpgw3q5PqXr3muvN9Tm9A0WDiv3/view",
+    "class": "gold"
+  },
+  {
+    "name": "Tree View App",
+    "description": "A responsive MERN app to display a directory structure recursively in a tree view. It was dockerized and deployed on DigitalOcean.",
+    "time": "Oct 2024",
+    "stack": "docker,react,nodejs",
+    "image": {
+      "dark": "Media/Projects/folder_dark.png",
+      "light": "Media/Projects/folder_firefly.png",
+      "alt": "Link Tree"
+    },
+    "link": "https://github.com/harshit-jain52/TreeView",
+    "class": ""
+  },
+  {
+    "name": "LinkTree",
+    "description": "A simple link tree web app, to showcase users' various links at one place. This is my first Go project.",
+    "time": "Jun 2024",
+    "stack": "go,vite",
+    "image": {
+      "dark": "Media/Projects/url_dark.png",
+      "light": "Media/Projects/url_firefly.png",
+      "alt": "Link Tree"
+    },
+    "link": "https://github.com/harshit-jain52/LinkTree",
+    "class": ""
+  },
+  {
+    "name": "Chat App",
+    "description": "Minimal real-time chatting app created using Flutter and Firebase. This is my first Flutter project.",
+    "time": "May 2024",
+    "stack": "dart,flutter,firebase",
+    "image": {
+      "dark": "Media/Projects/chat_dark.png",
+      "light": "Media/Projects/chat_firefly.png",
+      "alt": "Chat App"
+    },
+    "link": "https://github.com/harshit-jain52/ChatApp",
+    "class": ""
+  },
+  {
+    "name": "Video Rental System",
+    "description": "A full-stack web application for renting/buying movies, created using MERN stack, with JWT authentication, payment gateway integration and a movie recommendation system.",
+    "time": "Apr 2024",
+    "stack": "mongo,express,react,nodejs,tailwind",
+    "image": {
+      "dark": "Media/Projects/cart_dark.png",
+      "light": "Media/Projects/cart_firefly.png",
+      "alt": "E-commerce"
+    },
+    "link": "https://github.com/harshit-jain52/VRS-Backend",
+    "class": ""
+  },
+  {
+    "name": "URL Shortener",
+    "description": "Custom domain URL shortener, created using Node & Express with database on MongoDB, and hosted on Vercel.",
+    "time": "Feb 2024",
+    "stack": "mongo,express,nodejs,vercel",
+    "image": {
+      "dark": "Media/Projects/url_dark.png",
+      "light": "Media/Projects/url_firefly.png",
+      "alt": "url link"
+    },
+    "link": "https://github.com/harshit-jain52/url-shortener",
+    "class": ""
+  },
+  {
+    "name": "HangMan",
+    "description": "A word guessing game with a feature to use hint, using APIs to get random nouns and their definitions. This is my first React project.",
+    "time": "Dec 2023",
+    "stack": "react,sass",
+    "image": {
+      "dark": "Media/Projects/hangman_dark.png",
+      "light": "Media/Projects/hangman_firefly.png",
+      "alt": "hangman"
+    },
+    "link": "https://github.com/harshit-jain52/HangMan_React",
+    "class": ""
+  },
+  {
+    "name": "To-Do List",
+    "description": "A simple to-do list with add, edit and delete functionalities, using localStorage API to save list items. This is my first javascript project.",
+    "time": "Dec 2023",
+    "stack": "html,css,js",
+    "image": {
+      "dark": "Media/Projects/list_dark.png",
+      "light": "Media/Projects/list_firefly.png",
+      "alt": "to-do list"
+    },
+    "link": "https://github.com/harshit-jain52/To-Do_List",
+    "class": ""
+  },
+  {
+    "name": "CSV Parser",
+    "description": "A bash script to parse CSV file and display it in a given formatted way. This is my first time working with shell.",
+    "time": "May 2023",
+    "stack": "bash",
+    "image": {
+      "dark": "Media/Projects/csv_dark.png",
+      "light": "Media/Projects/csv_firefly.png",
+      "alt": "to-do list"
+    },
+    "link": "https://github.com/harshit-jain52/KOSS_Teaching_Task",
+    "class": ""
+  },
+  {
+    "name": "HangMan",
+    "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules.",
+    "time": "Oct 2021",
+    "stack": "py",
+    "image": {
+      "dark": "Media/Projects/hangman_dark.png",
+      "light": "Media/Projects/hangman_firefly.png",
+      "alt": "hangman"
+    },
+    "link": "https://github.com/harshit-jain52/HangMan",
+    "class": ""
+  }
+]
