@@ -484,6 +484,16 @@ p.formal_intro {
         }
       }
 
+      & .info{
+        display: flex;
+        gap: 0.52vw;
+
+        & img{
+          width: 1.8vw;
+          margin-top: -0.55vw;
+        }
+      }
+
       & .arrow {
         position: absolute;
         width: 0;
@@ -629,6 +639,15 @@ p.formal_intro {
               width: 5.208vw;
               margin: 0 0.5vw;
             }
+          }
+        }
+
+        & .info {
+          gap: 1.04vw;
+
+          & img {
+            width: 2.6vw;
+            margin-top: -0.65vw;
           }
         }
 
@@ -811,6 +830,11 @@ p.formal_intro {
           top: 2vw;
           border-top: 6vw solid transparent;
           border-bottom: 6vw solid transparent;
+        }
+
+        & .info img {
+          width: 4.0vw;
+          margin-top: -1.0vw;
         }
       }
 

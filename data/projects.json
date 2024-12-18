@@ -10,7 +10,11 @@
       "alt": "Dream11"
     },
     "link": "https://drive.google.com/file/d/1hSaPmtpgw3q5PqXr3muvN9Tm9A0WDiv3/view",
-    "class": "gold"
+    "class": "gold",
+    "typeimg":{
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
   },
   {
     "name": "Tree View App",
@@ -23,7 +27,11 @@
       "alt": "Link Tree"
     },
     "link": "https://github.com/harshit-jain52/TreeView",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "LinkTree",
@@ -36,7 +44,11 @@
       "alt": "Link Tree"
     },
     "link": "https://github.com/harshit-jain52/LinkTree",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "Chat App",
@@ -49,7 +61,11 @@
       "alt": "Chat App"
     },
     "link": "https://github.com/harshit-jain52/ChatApp",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "Video Rental System",
@@ -62,7 +78,11 @@
       "alt": "E-commerce"
     },
     "link": "https://github.com/harshit-jain52/VRS-Backend",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
   },
   {
     "name": "URL Shortener",
@@ -75,7 +95,11 @@
       "alt": "url link"
     },
     "link": "https://github.com/harshit-jain52/url-shortener",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "HangMan",
@@ -88,7 +112,11 @@
       "alt": "hangman"
     },
     "link": "https://github.com/harshit-jain52/HangMan_React",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "To-Do List",
@@ -101,7 +129,11 @@
       "alt": "to-do list"
     },
     "link": "https://github.com/harshit-jain52/To-Do_List",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "CSV Parser",
@@ -114,7 +146,11 @@
       "alt": "to-do list"
     },
     "link": "https://github.com/harshit-jain52/KOSS_Teaching_Task",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
   },
   {
     "name": "HangMan",
@@ -127,6 +163,10 @@
       "alt": "hangman"
     },
     "link": "https://github.com/harshit-jain52/HangMan",
-    "class": ""
+    "class": "",
+    "typeimg":{
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
   }
 ]

@@ -31,9 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
             ${icons}
             </div>
           </div>
+          <div class="info">
             <small>${project.time}</small>
-            <p>${project.description}</p>
-            <span class="arrow"></span>
+            <img
+              class="logo logo-dark"
+              src=${project.typeimg.dark}
+            />
+            <img
+              class="logo logo-light"
+              src=${project.typeimg.light}
+            />
+          </div>
+          <p>${project.description}</p>
+          <span class="arrow"></span>
         </div>
       </div>`;
 
