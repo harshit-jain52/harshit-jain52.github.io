@@ -400,6 +400,8 @@ p.formal_intro {
 
 #handles .box {
   width: 25%;
+  display: flex;
+  justify-content: center;
 }
 
 #handles .logo {
