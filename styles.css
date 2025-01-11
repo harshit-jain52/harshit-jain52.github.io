@@ -385,8 +385,15 @@ p.formal_intro {
 }
 
 .bloglink {
-  text-decoration: underline;
-  color: var(--hero-text);
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  & a {
+    text-decoration: none;
+    color: var(--hero-text);
+    font-size: 1.5vw;
+    font-family: LeagueSpartan;
+  }
 }
 
 .box {
@@ -699,6 +706,13 @@ p.formal_intro {
     height: 4.68vw;
   }
 
+  .bloglink {
+    gap: 3vw;
+    & a {
+      font-size: 3vw;
+    }
+  }
+
   /* Navbar */
 
   nav.bar {
@@ -867,6 +881,13 @@ p.formal_intro {
   #handles .logo {
     width: 6vw;
     height: 6vw;
+  }
+
+  .bloglink {
+    gap: 4vw;
+    & a {
+      font-size: 4vw;
+    }
   }
 
   nav.bar {
