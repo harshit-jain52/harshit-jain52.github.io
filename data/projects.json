@@ -1,5 +1,39 @@
 [
   {
+    "name": "Gram Panchayat Management System",
+    "description": "Multi-user web app to manage the functioning of a Gram Panchayat, with session-based authentication and facility to view and edit various entities.",
+    "time": "Mar 2025",
+    "stack": "postgres,flask,html",
+    "image": {
+      "dark": "Media/Projects/village_dark.png",
+      "light": "Media/Projects/village_firefly.png",
+      "alt": "GPMS"
+    },
+    "link": "https://github.com/RG-04/Gram-Panchayat-Management-System",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
+    "name": "KTP",
+    "description": "Emulating End-to-End Reliable Flow Control over Unreliable Communication Channels",
+    "time": "Feb 2025",
+    "stack": "c",
+    "image": {
+      "dark": "Media/Projects/network_dark.png",
+      "light": "Media/Projects/network_firefly.png",
+      "alt": "KTP"
+    },
+    "link": "https://github.com/harshit-jain52/CS39006/tree/main/A4",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
+  },
+  {
     "name": "Next-Gen Team Builder with Predictive AI",
     "description": "Inter-IIT Tech Meet 13.0 Mid-Prep Task by Dream11",
     "time": "Nov-Dec 2024",
@@ -11,7 +45,41 @@
     },
     "link": "https://drive.google.com/file/d/1hSaPmtpgw3q5PqXr3muvN9Tm9A0WDiv3/view",
     "class": "gold",
-    "typeimg":{
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
+    "name": "mini-RISC Processor",
+    "description": "A 32-bit mini-RISC processor, written in Verilog, with a 4-stage pipeline",
+    "time": "Nov 2024",
+    "stack": "",
+    "image": {
+      "dark": "Media/Projects/chip_dark.png",
+      "light": "Media/Projects/chip_firefly.png",
+      "alt": "mini-RISC Processor"
+    },
+    "link": "https://github.com/harshit-jain52/CS39001/tree/master/verilog_assgn06",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
+    "name": "TinyC Compiler",
+    "description": "A compiler for TinyC language (a subset of C) written in C/C++, with lex and yacc.",
+    "time": "Nov 2024",
+    "stack": "c,cpp",
+    "image": {
+      "dark": "Media/Projects/gear_dark.png",
+      "light": "Media/Projects/gear_firefly.png",
+      "alt": "TinyC Compiler"
+    },
+    "link": "https://github.com/harshit-jain52/CS39003/tree/master/TinyC3",
+    "class": "",
+    "typeimg": {
       "dark": "Media/Projects/group_dark.png",
       "light": "Media/Projects/group_firefly.png"
     }
@@ -28,7 +96,7 @@
     },
     "link": "https://github.com/harshit-jain52/TreeView",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -45,7 +113,7 @@
     },
     "link": "https://github.com/harshit-jain52/LinkTree",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -62,7 +130,7 @@
     },
     "link": "https://github.com/harshit-jain52/ChatApp",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -79,7 +147,7 @@
     },
     "link": "https://github.com/harshit-jain52/VRS-Backend",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/group_dark.png",
       "light": "Media/Projects/group_firefly.png"
     }
@@ -96,7 +164,7 @@
     },
     "link": "https://github.com/harshit-jain52/url-shortener",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -113,7 +181,7 @@
     },
     "link": "https://github.com/harshit-jain52/HangMan_React",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -130,7 +198,7 @@
     },
     "link": "https://github.com/harshit-jain52/To-Do_List",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -147,7 +215,7 @@
     },
     "link": "https://github.com/harshit-jain52/KOSS_Teaching_Task",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
       "light": "Media/Projects/solo_firefly.png"
     }
@@ -164,7 +232,7 @@
     },
     "link": "https://github.com/harshit-jain52/HangMan",
     "class": "",
-    "typeimg":{
+    "typeimg": {
       "dark": "Media/Projects/group_dark.png",
       "light": "Media/Projects/group_firefly.png"
     }
