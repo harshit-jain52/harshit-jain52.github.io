@@ -153,6 +153,23 @@
     }
   },
   {
+    "name": "Tree-based Approximate Nearest Neighbour Search",
+    "description": "Implementation of KD-Tree and RP-Tree indices, enabling efficient hierarchical storage and retrieval [SWE Lab Assignment]",
+    "time": "Mar 2024",
+    "stack": "cpp",
+    "image": {
+      "dark": "Media/Projects/tree_dark.png",
+      "light": "Media/Projects/tree_firefly.png",
+      "alt": "ANN"
+    },
+    "link": "https://github.com/harshit-jain52/CS20006/tree/master/assgn_05",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
+  },
+  {
     "name": "URL Shortener",
     "description": "Custom domain URL shortener, created using Node & Express with database on MongoDB, and hosted on Vercel",
     "time": "Feb 2024",
