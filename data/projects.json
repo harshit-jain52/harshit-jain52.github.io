@@ -1,5 +1,22 @@
 [
   {
+    "name": "SQL Query Processer and Optimizer",
+    "description": "Parsing SQL Queries and optimizing the resultant relational algebra using predicate pushdown, join reordering, and common subexpression elimination [DBMS Lab Project]",
+    "time": "Apr 2025",
+    "stack": "postgres,flask,c",
+    "image": {
+      "dark": "Media/Projects/db_dark.png",
+      "light": "Media/Projects/db_firefly.png",
+      "alt": "SQL Query Processer and Optimizer"
+    },
+    "link": "https://github.com/RG-04/SQL-Parser-And-Optimizer",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
     "name": "Gram Panchayat Management System",
     "description": "Multi-user web app to manage the functioning of a Gram Panchayat, with session-based authentication and facility to view and edit various entities [DBMS Lab Assignment]",
     "time": "Mar 2025",
@@ -239,7 +256,7 @@
   },
   {
     "name": "HangMan",
-    "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules [School Project]",
+    "description": "This is my (well, my 12th grade version's) take on the famous guessing game. This Python project uses Tkinter and Pillow modules [12th Grade Project]",
     "time": "Oct 2021",
     "stack": "py",
     "image": {
