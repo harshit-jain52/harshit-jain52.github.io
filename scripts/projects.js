@@ -11,41 +11,34 @@ document.addEventListener("DOMContentLoaded", () => {
               `<img src="https://skillicons.dev/icons?i=${item}" alt="${item}" />`
           )
           .join("");
-        let html = `<div class="container">
-        <a class="circle" href="${project.link}" target="_blank">
-            <img
-                class="logo logo-dark"
-                src=${project.image.dark}
-                alt=${project.alt}
-            />
-            <img
-                class="logo logo-light"
-                src=${project.image.light}
-                alt=${project.alt}
-            />
-        </a>
-        <div class="textbox ${project.class}">
-          <div class="head">
-            <h2>${project.name}</h2>
-            <div class="stack">
-            ${icons}
+          let html = `<div class="container">
+          ${project.link ? `
+            <a class="circle" href="${project.link}" target="_blank">
+              <img class="logo logo-dark" src="${project.image.dark}" alt="${project.alt}" />
+              <img class="logo logo-light" src="${project.image.light}" alt="${project.alt}" />
+            </a>
+          ` : `
+            <div class="circle">
+              <img class="logo logo-dark" src="${project.image.dark}" alt="${project.alt}" />
+              <img class="logo logo-light" src="${project.image.light}" alt="${project.alt}" />
             </div>
+          `}
+          <div class="textbox ${project.class}">
+            <div class="head">
+              <h2>${project.name}</h2>
+              <div class="stack">
+                ${icons}
+              </div>
+            </div>
+            <div class="info">
+              <small>${project.time}</small>
+              <img class="logo logo-dark" src="${project.typeimg.dark}" />
+              <img class="logo logo-light" src="${project.typeimg.light}" />
+            </div>
+            <p>${project.description}</p>
+            <span class="arrow"></span>
           </div>
-          <div class="info">
-            <small>${project.time}</small>
-            <img
-              class="logo logo-dark"
-              src=${project.typeimg.dark}
-            />
-            <img
-              class="logo logo-light"
-              src=${project.typeimg.light}
-            />
-          </div>
-          <p>${project.description}</p>
-          <span class="arrow"></span>
-        </div>
-      </div>`;
+        </div>`;
 
         table.innerHTML = table.innerHTML + html;
       });

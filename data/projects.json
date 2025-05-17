@@ -1,5 +1,22 @@
 [
   {
+    "name": "DSv2 Streaming/Batch Source",
+    "description": "Built a Spark DSv2 source that reads data from PokeAPI and writes it to a delta table in spark streaming and batch mode [Databricks Codelab]",
+    "time": "May 2025",
+    "stack": "scala",
+    "image": {
+      "dark": "Media/Projects/databricks_red.png",
+      "light": "Media/Projects/databricks_light.svg",
+      "alt": "Databricks CodeLab"
+    },
+    "link": "",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
+  },
+  {
     "name": "SQL Query Processer and Optimizer",
     "description": "Parsing SQL Queries and optimizing the resultant relational algebra using predicate pushdown, join reordering, and common subexpression elimination [DBMS Lab Project]",
     "time": "Apr 2025",
