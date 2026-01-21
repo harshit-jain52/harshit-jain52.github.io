@@ -1,5 +1,39 @@
 [
   {
+    "name": "Shell",
+    "description": "Unix Shell Implementation [CodeCrafters]",
+    "time": "Dec 2025",
+    "stack": "go",
+    "image": {
+      "dark": "Media/Projects/codecrafters.png",
+      "light": "Media/Projects/codecrafters.png",
+      "alt": "Shell"
+    },
+    "link": "https://github.com/harshit-jain52/codecrafters-shell-go",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
+  },
+  {
+    "name": "ASPS",
+    "description": "ABAC-Supported PostgreSQL [BTP]",
+    "time": "Aug 2025",
+    "stack": "c",
+    "image": {
+      "dark": "Media/Projects/postgres.png",
+      "light": "Media/Projects/postgres.png",
+      "alt": "ABAC in PostgreSQL"
+    },
+    "link": "https://github.com/harshit-jain52/postgres",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
+  },
+  {
     "name": "DSv2 Streaming/Batch Source",
     "description": "Built a Spark DSv2 source that reads data from PokeAPI and writes it to a delta table in spark streaming and batch mode [Databricks Codelab]",
     "time": "May 2025",
