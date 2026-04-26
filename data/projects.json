@@ -1,5 +1,73 @@
 [
   {
+    "name": "PATEE",
+    "description": "PostgreSQL with ABAC and Trusted Execution Environment [BTP-II]",
+    "time": "Apr 2026",
+    "stack": "c",
+    "image": {
+      "dark": "Media/Projects/postgres.png",
+      "light": "Media/Projects/postgres.png",
+      "alt": "ABAC in PostgreSQL"
+    },
+    "link": "https://github.com/harshit-jain52/postgres/tree/patee",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/solo_dark.png",
+      "light": "Media/Projects/solo_firefly.png"
+    }
+  },
+  {
+    "name": "Distributed KV Store",
+    "description": "Dynamo-based Key-Value Store [Distributed Systems Project]",
+    "time": "Apr 2026",
+    "stack": "go",
+    "image": {
+      "dark": "Media/Projects/db_dark.png",
+      "light": "Media/Projects/db_firefly.png",
+      "alt": "Dist KV"
+    },
+    "link": "https://github.com/harshit-jain52/Distributed-KVStore",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
+    "name": "WeRQty DB",
+    "description": "RDBMS Implementation [Database Engg Project]",
+    "time": "Mar 2026",
+    "stack": "cpp,python",
+    "image": {
+      "dark": "Media/Projects/db_dark.png",
+      "light": "Media/Projects/db_firefly.png",
+      "alt": "DBE"
+    },
+    "link": "https://github.com/harshit-jain52/WeRQty-DBE",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
+    "name": "Load Balancer",
+    "description": "[Cloud Computing Project]",
+    "time": "Mar 2026",
+    "stack": "java",
+    "image": {
+      "dark": "Media/Projects/db_dark.png",
+      "light": "Media/Projects/db_firefly.png",
+      "alt": "Load balancer"
+    },
+    "link": "https://github.com/harshit-jain52/CloudComputing-LoadBalancer",
+    "class": "",
+    "typeimg": {
+      "dark": "Media/Projects/group_dark.png",
+      "light": "Media/Projects/group_firefly.png"
+    }
+  },
+  {
     "name": "Shell",
     "description": "Unix Shell Implementation [CodeCrafters]",
     "time": "Dec 2025",
@@ -18,7 +86,7 @@
   },
   {
     "name": "ASPS",
-    "description": "ABAC-Supported PostgreSQL [BTP]",
+    "description": "ABAC-Supported PostgreSQL [BTP-I]",
     "time": "Aug 2025",
     "stack": "c",
     "image": {
@@ -26,7 +94,7 @@
       "light": "Media/Projects/postgres.png",
       "alt": "ABAC in PostgreSQL"
     },
-    "link": "https://github.com/harshit-jain52/postgres",
+    "link": "https://github.com/harshit-jain52/postgres/tree/aspsv1",
     "class": "",
     "typeimg": {
       "dark": "Media/Projects/solo_dark.png",
